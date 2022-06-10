@@ -2,6 +2,28 @@
   @extend .nav-item;
 }
 
+.navbar {
+  background-color: map-get($theme-colors, "offwhite");
+}
+
+.navbar-brand {
+  color: map-get($theme-colors, "primary");
+
+  &:hover {
+    color: map-get($theme-colors, "secondary");
+  }
+}
+
 .banner .nav a {
   @extend .nav-link;
+
+  color: map-get($theme-colors, "offWhite");
+
+  &:hover {
+    color: map-get($theme-colors, "secondary");
+  }
+}
+
+.navbar-toggler {
+  border: 1.25px solid #c8c8c9;
 }
