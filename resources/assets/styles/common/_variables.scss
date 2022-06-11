@@ -14,3 +14,68 @@ $theme-colors: (
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+// Fonts & Typography
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("/../fonts/Poppins-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins Italic";
+  src: url("/../fonts/Poppins-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins Semibold";
+  src: url("/../fonts/Poppins-Semibold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins Semibold Italic";
+  src: url("/../fonts/Poppins-SemiboldItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("/../fonts/Poppins-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold Italic";
+  src: url("/../fonts/Poppins-BoldItalic.ttf") format("ttf");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300 !important;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+}
+
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+}
