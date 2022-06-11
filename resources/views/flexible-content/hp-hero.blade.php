@@ -1,0 +1,10 @@
+{{-- Homepage Hero blade --}}
+
+<section class="hp-hero container-fluid d-flex" style="background: url('@sub('hero_image')') center center/cover no-repeat;">
+    <div class="row align-items-center pl-5 hp-hero__content-wrapper my-auto">
+        <div class="col-lg-8 col-md-8 col-sm-10 text-center text-md-left text-sm-center px-5 py-5">
+            <h1>@sub('hero_header')</h1>
+            <h2>@sub('hero_subheader')</h2>
+        </div>
+    </div>
+</section>

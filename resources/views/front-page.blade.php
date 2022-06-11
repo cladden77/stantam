@@ -5,7 +5,7 @@
   <?php if( have_rows('hp_flexible_content') ): ?>
   <?php while( have_rows('hp_flexible_content') ): the_row(); ?>
       <?php if( get_row_layout() == 'home_page_hero' ): ?>
-          @include('flexible-content.home_page_hero')
+          @include('flexible-content.hp-hero')
       <?php endif; ?>
        <?php if( get_row_layout() == 'one_col' ): ?>
           @include('flexible-content.one-col')
