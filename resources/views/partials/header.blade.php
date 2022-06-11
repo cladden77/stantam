@@ -1,6 +1,6 @@
 <header class="banner">
   <nav class="navbar">
-  <div class="container">
+  <div class="container-fluid py-3 px-5">
     <div class="col-6">
       <a class="navbar-brand" href="{{ home_url('/') }}"><img src="./resources/assets/images/logo.svg" alt="Ladden Studios" /></a>
     </div>
