@@ -2,7 +2,7 @@
   <nav class="navbar">
   <div class="container-fluid py-3 px-5">
     <div class="col-6">
-      <a class="navbar-brand" href="{{ home_url('/') }}"><img src="./resources/assets/images/logo.svg" alt="Ladden Studios" /></a>
+      <a class="navbar-brand" href="{{ home_url('/') }}"><img src="./resources/assets/images/Stentam-logo.png" alt="Stenson Tamaddon" /></a>
     </div>
 
     <div class="col-6 text-right">
