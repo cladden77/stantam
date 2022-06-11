@@ -6,7 +6,7 @@
             <h1>@sub('hero_header')</h1>
             <h2>@sub('hero_subheader')</h2>
             <p>@sub('hero_content')</p>
-            <a class="button button-primary" href="@sub('hero_cta', 'url')">@sub('hero_cta', 'title')</a>
+            <a class="button button--primary" href="@sub('hero_cta', 'url')">@sub('hero_cta', 'title')</a>
         </div>
     </div>
 </section>
