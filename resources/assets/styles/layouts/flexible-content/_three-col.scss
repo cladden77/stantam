@@ -1,3 +1,40 @@
 .three-col {
   display: block;
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 300 !important;
+    color: map-get($theme-colors, "secondaryLight");
+  }
+
+  h3 {
+    font-size: 3.25em;
+    font-weight: 700 !important;
+    color: map-get($theme-colors, "primary");
+  }
+
+  .card {
+    border: 5px solid #798445;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: #798445;
+      color: $white !important;
+    }
+
+    h4 {
+      color: map-get($theme-colors, "secondaryLight");
+      font-weight: 700 !important;
+      line-height: 1.75em;
+    }
+
+    .card-footer {
+      background-color: transparent;
+      border-top: none;
+    }
+  }
+
+  .card:hover h4 {
+    color: $white;
+  }
 }
