@@ -26,12 +26,13 @@
   }
 
   &--secondary {
-    border: 1px solid #dedede;
-    color: map-get($theme-colors, "lightGrey");
-    background-color: #dedede;
-  }
+    color: $white;
+    background-color: map-get($theme-colors, "secondary");
 
-  &:hover {
-    background-color: map-get($theme-colors, "lightGrey");
+    &:hover {
+      color: $white;
+      background-color: map-get($theme-colors, "secondary");
+      text-decoration: none;
+    }
   }
 }

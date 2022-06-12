@@ -10,24 +10,24 @@
                 <div class="card-body text-center">
                     <h4 class="card-title my-4">@sub('three_col_left_card_title')</h4>
                     <p class="card-text">@sub('three_col_left_card_content')</p>
-                    <div class="card-footer"><a class="button button--primary" href="@sub('three_col_left_card_cta', 'url')">@sub('three_col_left_card_cta', 'title')</a>
-                    </div>
+                </div>
+                <div class="card-footer text-center mb-4"><a class="button button--secondary" href="@sub('three_col_left_card_cta', 'url')">@sub('three_col_left_card_cta', 'title')</a>
                 </div>
             </div>
             <div class="card mx-2">
                 <div class="card-body text-center">
                     <h4 class="card-title my-4">@sub('three_col_middle_card_title')</h4>
                     <p class="card-text">@sub('three_col_middle_card_content')</p>
-                    <div class="card-footer"><a class="button button--primary" href="@sub('three_col_middle_card_cta', 'url')">@sub('three_col_middle_card_cta', 'title')</a>
-                    </div>
+                </div>
+                <div class="card-footer text-center mb-4"><a class="button button--secondary" href="@sub('three_col_middle_card_cta', 'url')">@sub('three_col_middle_card_cta', 'title')</a>
                 </div>
             </div>
             <div class="card mx-2">
                 <div class="card-body text-center">
                     <h4 class="card-title my-4">@sub('three_col_right_card_title')</h4>
                     <p class="card-text">@sub('three_col_right_card_content')</p>
-                    <div class="card-footer"><a class="button button--primary" href="@sub('three_col_right_card_cta', 'url')">@sub('three_col_right_card_cta', 'title')</a>
-                    </div>
+                </div>
+                <div class="card-footer text-center mb-4"><a class="button button--secondary" href="@sub('three_col_right_card_cta', 'url')">@sub('three_col_right_card_cta', 'title')</a>
                 </div>
             </div>
          </div>
