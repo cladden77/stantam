@@ -1,5 +1,6 @@
 .info-slider {
   background-color: #dedede;
+  padding-bottom: 6em;
 
   h2 {
     font-size: 1.5em;
@@ -11,14 +12,23 @@
     font-size: 3.25em;
     font-weight: 700 !important;
     color: map-get($theme-colors, "primary");
+
+    @include media-breakpoint-down(md) {
+      font-size: 2.25em;
+    }
   }
 
-  .info-slides {
-    background-color: #dedede;
+  p {
+    padding-right: 10em;
+    line-height: 2.5em;
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 0 !important;
+    }
   }
 
-  .info-slides img {
+  img {
     border-radius: 20px !important;
-    max-width: 60%;
+    max-width: 80%;
   }
 }
