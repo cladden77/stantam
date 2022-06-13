@@ -1,0 +1,24 @@
+.info-slider {
+  background-color: #dedede;
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 300 !important;
+    color: map-get($theme-colors, "secondaryLight");
+  }
+
+  h3 {
+    font-size: 3.25em;
+    font-weight: 700 !important;
+    color: map-get($theme-colors, "primary");
+  }
+
+  .info-slides {
+    background-color: #dedede;
+  }
+
+  .info-slides img {
+    border-radius: 20px !important;
+    max-width: 60%;
+  }
+}

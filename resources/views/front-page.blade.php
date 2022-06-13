@@ -7,18 +7,12 @@
       <?php if( get_row_layout() == 'home_page_hero' ): ?>
           @include('flexible-content.hp-hero')
       <?php endif; ?>
-       <?php if( get_row_layout() == 'one_col' ): ?>
-          @include('flexible-content.one-col')
-      <?php endif; ?>
       <?php if( get_row_layout() == 'three_col' ): ?>
           @include('flexible-content.three-col')
       <?php endif; ?>
-      <?php if( get_row_layout() == 'listings' ): ?>
-          @include('flexible-content.listings')
+      <?php if( get_row_layout() == 'info_slider' ): ?>
+          @include('flexible-content.info-slider')
       <?php endif; ?>
-      <?php if( get_row_layout() == 'contact' ): ?>
-      @include('flexible-content.contact')
-  <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
