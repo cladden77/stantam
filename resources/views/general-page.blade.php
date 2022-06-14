@@ -1,0 +1,32 @@
+@extends('layouts.generalPage')
+
+@section('content')
+  @while(have_posts()) @php the_post() @endphp
+  <?php if( have_rows('hp_flexible_content') ): ?>
+  <?php while( have_rows('hp_flexible_content') ): the_row(); ?>
+      <?php if( get_row_layout() == 'hero' ): ?>
+          @include('flexible-content.hero')
+      <?php endif; ?>
+      <?php if( get_row_layout() == 'three_col' ): ?>
+          @include('flexible-content.three-col')
+      <?php endif; ?>
+      <?php if( get_row_layout() == 'info_slider' ): ?>
+          @include('flexible-content.info-slider')
+      <?php endif; ?>
+      <?php if( get_row_layout() == 'satisfaction_block' ): ?>
+          @include('flexible-content.satisfaction')
+      <?php endif; ?>
+      <?php if( get_row_layout() == 'full_width_cta' ): ?>
+      @include('flexible-content.full-width-cta')
+      <?php endif; ?>
+      <?php if( get_row_layout() == 'logo_slider' ): ?>
+      @include('flexible-content.logo-slider')
+      <?php endif; ?>
+      <?php if( get_row_layout() == 'recent_post_cards' ): ?>
+      @include('flexible-content.recent-post-cards')
+      <?php endif; ?>
+  <?php endwhile; ?>
+<?php endif; ?>
+
+  @endwhile
+@endsection
