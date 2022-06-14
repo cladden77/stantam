@@ -13,6 +13,9 @@
       <?php if( get_row_layout() == 'info_slider' ): ?>
           @include('flexible-content.info-slider')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'satisfaction_block' ): ?>
+          @include('flexible-content.satisfaction')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
