@@ -2,7 +2,7 @@
   <nav class="navbar">
   <div class="container-fluid py-3 px-5">
     <div class="col-6">
-      <a class="navbar-brand" href="{{ home_url('/') }}"><img src="./resources/assets/images/Stentam-logo.png" alt="Stenson Tamaddon" /></a>
+      <a class="navbar-brand" href="{{ home_url('/') }}"><img src="http://stentam.local/app/uploads/2022/06/Stentam-logo.png" alt="Stenson Tamaddon" /></a>
     </div>
 
     <div class="col-6 text-right">

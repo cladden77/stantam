@@ -2,7 +2,7 @@
   Template Name: General Page Template
 --}}
 
-@extends('layouts.frontpage')
+@extends('layouts.generalpage')
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp

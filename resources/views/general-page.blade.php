@@ -1,11 +1,11 @@
-@extends('layouts.generalPage')
+@extends('layouts.generalpage')
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp
-  <?php if( have_rows('hp_flexible_content') ): ?>
-  <?php while( have_rows('hp_flexible_content') ): the_row(); ?>
-      <?php if( get_row_layout() == 'hero' ): ?>
-          @include('flexible-content.hero')
+  <?php if( have_rows('general_flexible_content') ): ?>
+  <?php while( have_rows('general_flexible_content') ): the_row(); ?>
+      <?php if( get_row_layout() == 'page_hero' ): ?>
+          @include('flexible-content.page-hero')
       <?php endif; ?>
       <?php if( get_row_layout() == 'three_col' ): ?>
           @include('flexible-content.three-col')
