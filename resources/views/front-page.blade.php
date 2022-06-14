@@ -16,6 +16,9 @@
       <?php if( get_row_layout() == 'satisfaction_block' ): ?>
           @include('flexible-content.satisfaction')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'full_width_cta' ): ?>
+      @include('flexible-content.full-width-cta')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 

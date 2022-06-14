@@ -1,0 +1,12 @@
+.full-width-cta {
+  background-color: map-get($theme-colors, "primaryLight");
+  color: $white;
+
+  h2 {
+    font-size: 2.25em;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2em;
+    }
+  }
+}
