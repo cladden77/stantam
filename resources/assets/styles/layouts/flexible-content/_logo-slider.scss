@@ -1,0 +1,9 @@
+.logo-slider {
+  background-color: map-get($theme-colors, "lightGray");
+
+  h2 {
+    font-size: 3.25em;
+    font-weight: 700 !important;
+    color: map-get($theme-colors, "primary");
+  }
+}

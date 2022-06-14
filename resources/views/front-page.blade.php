@@ -19,6 +19,9 @@
       <?php if( get_row_layout() == 'full_width_cta' ): ?>
       @include('flexible-content.full-width-cta')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'logo_slider' ): ?>
+      @include('flexible-content.logo-slider')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 

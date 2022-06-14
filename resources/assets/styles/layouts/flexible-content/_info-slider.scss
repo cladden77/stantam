@@ -31,4 +31,22 @@
     border-radius: 20px !important;
     max-width: 80%;
   }
+
+  .carousel-indicators {
+    bottom: -80px;
+  }
+
+  .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #49522b;
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .carousel-indicators li.active {
+    background-color: map-get($theme-colors, "secondary") !important;
+    opacity: 1;
+  }
 }

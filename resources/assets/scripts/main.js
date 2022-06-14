@@ -1,6 +1,9 @@
 // import external dependencies
 import 'jquery';
 
+// Import Slick
+import 'slick-carousel/slick/slick.min';
+
 // Import everything from autoload
 import './autoload/**/*'
 
