@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="footer py-5">
   <div class="container">
 
   </div>

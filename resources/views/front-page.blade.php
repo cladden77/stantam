@@ -22,6 +22,9 @@
       <?php if( get_row_layout() == 'logo_slider' ): ?>
       @include('flexible-content.logo-slider')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'recent_post_cards' ): ?>
+      @include('flexible-content.recent-post-cards')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
