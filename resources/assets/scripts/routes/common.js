@@ -1,20 +1,17 @@
-import 'slick-carousel';
-import 'animate.css';
-
 export default {
   init() {
     // JavaScript to be fired on all pages
 
-    // Slick Carousel
-    $('.slick-carousel').slick();
+    // // Slick Carousel
+    // $('.slick-carousel').slick();
 
-    $('.hero__row__wrap__slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      // autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-    });
+    // $('.hero__row__wrap__slider').slick({
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1,
+    //   // autoplay: true,
+    //   autoplaySpeed: 5000,
+    //   dots: true,
+    // });
     
   },
   finalize() {
