@@ -7,7 +7,7 @@
     <div class="wrap" role="document">
       <div class="content">
         <main class="main">
-          @yield('content')
+          @yield('general_content')
         </main>
       </div>
     </div>
