@@ -2,68 +2,127 @@
   @extend .nav-item;
 }
 
-.navbar {
-  background-color: map-get($theme-colors, "offwhite");
-}
-
-.navbar-brand {
-  color: map-get($theme-colors, "primary");
-
-  img {
-    max-width: 50%;
-
-    @include media-breakpoint-down(md) {
-      max-width: 100%;
-    }
-  }
-
-  &:hover {
-    color: map-get($theme-colors, "secondary");
-  }
-}
-
 .banner .nav a {
   @extend .nav-link;
 
-  color: map-get($theme-colors, "offWhite");
+  color: map-get($theme-colors, "primary");
 
   &:hover {
-    color: map-get($theme-colors, "secondary");
+    color: map-get($theme-colors, "primaryLight");
   }
 }
 
-.navbar-toggler {
-  border: 1.5px solid #c8c8c9;
-  border-radius: 5px;
-}
+.banner {
+  .navbar.navbar-expand-lg.fixed-top.navbar-offcanvas {
+    background-color: #f5f5f5;
+  }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(90, 98, 101, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+  .navbar-brand {
+    color: map-get($theme-colors, "primary");
 
-@media (max-width: 992px) {
-  .navbar-collapse {
+    img {
+      max-width: 50%;
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
+    }
+
+    &:hover {
+      color: map-get($theme-colors, "secondary");
+    }
+  }
+
+  .navbar {
+    background-color: map-get($theme-colors, "offwhite");
+  }
+
+  .navbar-toggler {
+    border: 1.5px solid #c8c8c9;
+    border-radius: 5px;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(90, 98, 101, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .offcanvas-collapse {
     position: fixed;
-    top: 50px;
-    left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 75%;
-    height: 100%;
+    top: 109px; /* Height of navbar */
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    width: 300px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #f5f5f5;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: left, visibility;
+    align-items: start;
+
+    /*   Adds a subtle drop shadow   */
+    -moz-background-clip: padding;     /* Firefox 3.6 */
+    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
   }
 
-  .navbar-collapse.collapsing {
-    left: -75%;
-    transition: height 0s ease;
+  /* Makes the nav visible with the open class */
+  .offcanvas-collapse.open {
+    left: 78%;
+    visibility: visible;
   }
 
-  .navbar-collapse.show {
-    left: 0;
-    transition: left 300ms ease-in-out;
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
-  .navbar-toggler.collapsed ~ .navbar-collapse {
-    transition: left 500ms ease-in-out;
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: map-get($theme-colors, "primary");
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-underline .nav-link {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+
+  .nav-underline .nav-link:hover {
+    color: #007bff;
+  }
+
+  .nav-underline .active {
+    font-weight: 500;
+    color: #343a40;
+  }
+}
+
+// Navigation
+.menu-primary_navigation-container {
+  padding-top: 2em;
+
+  ul {
+    display: block;
   }
 }
