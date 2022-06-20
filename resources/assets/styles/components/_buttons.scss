@@ -35,4 +35,28 @@
       text-decoration: none;
     }
   }
+
+  &--outline-white {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    &:hover {
+      text-decoration: none;
+      color: map-get($theme-colors, "primaryLight");
+      background-color: $white;
+    }
+  }
+
+  &--outline-blue {
+    color: map-get($theme-colors, "primaryLight");
+    background-color: transparent;
+    border: 1px solid #007ac1;
+
+    &:hover {
+      text-decoration: none;
+      color: map-get($theme-colors, "primaryLight");
+      background-color: map-get($theme-colors, "primaryLight");
+    }
+  }
 }
