@@ -25,6 +25,9 @@
       <?php if( get_row_layout() == 'recent_post_cards' ): ?>
       @include('flexible-content.recent-post-cards')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'timeline' ): ?>
+      @include('flexible-content.timeline')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
