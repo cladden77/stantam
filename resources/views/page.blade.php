@@ -28,6 +28,9 @@
       <?php if( get_row_layout() == 'timeline' ): ?>
       @include('flexible-content.timeline')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'about_fifty_fifty' ): ?>
+      @include('flexible-content.about-fifty-fifty')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
