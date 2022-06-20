@@ -1,6 +1,37 @@
-.full-width-cta {
-  background-color: map-get($theme-colors, "primaryLight");
+.full-width-cta-gray {
+  color: map-get($theme-colors, "primary");
+  background-color: map-get($theme-colors, "lightGray");
+
+  h2 {
+    font-size: 2.25em;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2em;
+    }
+  }
+
+  .gform_wrapper.gravity-theme #field_submit input {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 3px solid $white;
+    color: $white !important;
+    padding: 10px 30px;
+  }
+
+  .gform_wrapper.gravity-theme input[type="email"] {
+    border-radius: 20px;
+    border: none;
+    padding-left: 2em;
+  }
+
+  .gform_wrapper.gravity-theme .gfield_label {
+    visibility: hidden;
+  }
+}
+
+.full-width-cta-blue {
   color: $white;
+  background-color: map-get($theme-colors, "primaryLight");
 
   h2 {
     font-size: 2.25em;
