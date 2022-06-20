@@ -1,0 +1,71 @@
+.timeline {
+  background-color: $white;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* The actual timeline (the vertical ruler) */
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #007ac1;
+    top: 240px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    max-height: 1630px;
+    z-index: 0;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+
+  div.right:nth-child(odd) {
+    left: 670px;
+  }
+
+  .card {
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 20px;
+
+    /* The circles on the timeline */
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -104px;
+      background-color: #007ac1;
+      top: 165px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .title-wrapper {
+      padding: 10px 20px;
+      background-color: #798445;
+      color: $white;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .timeline-img {
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
