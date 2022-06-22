@@ -24,4 +24,73 @@
       transform: scale(1.1);
     }
   }
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: map-get($theme-colors, "primaryLight");
+    }
+  }
+
+  .menu-footer_nav_left_1-container {
+    ul {
+      display: block;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .menu-footer_nav_left_2-container {
+    ul {
+      display: block;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .menu-footer_nav_middle_1-container {
+    ul {
+      display: block;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .menu-footer_nav_middle_2-container {
+    ul {
+      display: block;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .menu-footer_nav_right_1-container {
+    ul {
+      display: block;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .menu-footer_nav_right_2-container {
+    ul {
+      display: block;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
 }

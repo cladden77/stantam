@@ -4,42 +4,56 @@
       <div class="col-12 col-md-4 col-sm-12">
         <h2>About Company</h2>
         <hr />
+        <div class="mb-4">
         @if (has_nav_menu('footer_navigation_left_1'))
         {!! wp_nav_menu(['theme_location' => 'footer_navigation_left_1', 'menu_class' => 'nav']) !!}
         @endif
+        </div>
 
         <h2>Tax Credits</h2>
         <hr />
+        <div class="mb-4">
         @if (has_nav_menu('footer_navigation_left_2'))
         {!! wp_nav_menu(['theme_location' => 'footer_navigation_left_2', 'menu_class' => 'nav']) !!}
         @endif
+        </div>
       </div>
+
       <div class="col-12 col-md-4 col-sm-12">
         <h2>Compliance & Risk
           Protection</h2>
         <hr />
+        <div class="mb-4">
         @if (has_nav_menu('footer_navigation_middle_1'))
         {!! wp_nav_menu(['theme_location' => 'footer_navigation_middle_1', 'menu_class' => 'nav']) !!}
         @endif
+        </div>
 
         <h2>Technology</h2>
         <hr />
+        <div class="mb-4">
         @if (has_nav_menu('footer_navigation_middle_2'))
         {!! wp_nav_menu(['theme_location' => 'footer_navigation_middle_2', 'menu_class' => 'nav']) !!}
         @endif
+        </div>
       </div>
+
       <div class="col-12 col-md-4 col-sm-12">
         <h2>Knowledge Center</h2>
         <hr />
+        <div class="mb-4">
         @if (has_nav_menu('footer_navigation_right_1'))
         {!! wp_nav_menu(['theme_location' => 'footer_navigation_right_1', 'menu_class' => 'nav']) !!}
         @endif
+        </div>
 
         <h2>Client Portals</h2>
         <hr />
+        <div class="mb-4">
         @if (has_nav_menu('footer_navigation_right_2'))
         {!! wp_nav_menu(['theme_location' => 'footer_navigation_right_2', 'menu_class' => 'nav']) !!}
         @endif
+        </div>
       </div>
     </div>
 
