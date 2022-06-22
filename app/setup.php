@@ -44,7 +44,19 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+
+        'footer_navigation_left_1' => __('Footer Navigation Left 1', 'sage'),
+
+        'footer_navigation_left_2' => __('Footer Navigation Left 2', 'sage'),
+
+        'footer_navigation_middle_1' => __('Footer Navigation Middle 1', 'sage'),
+
+        'footer_navigation_middle_2' => __('Footer Navigation Middle 2', 'sage'),
+
+        'footer_navigation_right_1' => __('Footer Navigation Right 1', 'sage'),
+
+        'footer_navigation_right_2' => __('Footer Navigation Right 2', 'sage'),
     ]);
 
     /**

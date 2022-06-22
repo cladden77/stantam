@@ -1,3 +1,27 @@
 .footer {
   background-color: #123655;
+  color: map-get($theme-colors, "offWhite");
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  hr {
+    max-width: 40%;
+    border: 1px solid #6e793c;
+    margin-left: 0;
+  }
+
+  .social-icons a img {
+    max-height: 80%;
+    padding: 10px;
+  }
+
+  .footer .social-icons a img {
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
