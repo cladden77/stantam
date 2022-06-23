@@ -31,6 +31,9 @@
       <?php if( get_row_layout() == 'about_fifty_fifty' ): ?>
       @include('flexible-content.about-fifty-fifty')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'video' ): ?>
+      @include('flexible-content.video')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
