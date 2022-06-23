@@ -24,9 +24,12 @@
 </div>
 @endgroup
 @group('connect')
-<div id='form-2'>
+<div class="connect">
     @hassub('section_2_title')
-    <h3>@sub('section_2_title')</h3>
+    <h2>@sub('section_2_title')</h2>
+    @endsub
+    @hassub('working_time')
+    <p>@sub('working_time')</p>
     @endsub
     <div>
         @hassub('phone_icon', url)
@@ -79,3 +82,26 @@
     <img src="@field('map_img', 'url')" alt="@field('map_img', 'alt')">
 </div>
 @endfield
+@group('reviews')
+<div>
+    <div>
+        <h2>@sub('title')</h2>
+        <div>
+            <span>@sub('button_text')</span>
+            <a href="@sub('button_url')"></a>
+        </div>
+    </div>
+    <div id="slider">
+        @fields('review_repeat')
+        <div>
+            <img src="@sub('logo', 'url')" alt="@field('logo', 'alt')">
+            <p>@sub('review_text')</p>
+            <p>@sub('review_name')</p>
+        </div>
+        @endfields
+    </div>
+</div>
+@endgroup
+<div>
+    
+</div>
