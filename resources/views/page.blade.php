@@ -34,6 +34,9 @@
       <?php if( get_row_layout() == 'video' ): ?>
       @include('flexible-content.video')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'fifty_fifty_jobs' ): ?>
+      @include('flexible-content.fifty-fifty-jobs')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
