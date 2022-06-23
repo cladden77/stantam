@@ -9,9 +9,11 @@
  * Prefix your imports with `~` to grab from node_modules/
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
+
 // @import "~some-node-module";
 
 /** Import theme styles */
+
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
@@ -25,6 +27,7 @@
 @import "layouts/tinymce";
 
 // Flexible Content
+
 @import "layouts/flexible-content/hp_hero";
 @import "layouts/flexible-content/three-col";
 @import "layouts/flexible-content/info-slider";
@@ -36,3 +39,7 @@
 @import "layouts/flexible-content/timeline";
 @import "layouts/flexible-content/about-fifty-fifty";
 @import "layouts/flexible-content/video";
+
+// Pages
+
+@import "layouts/pages/contactus";

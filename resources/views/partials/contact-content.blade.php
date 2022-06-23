@@ -1,23 +1,25 @@
-<div style="background-image:url(@field('header_background_image', 'url'))">
-    <h1>@title</h1>
+<div class="header" style="background-image:url(@field('header_background_image', 'url'))">
+    <h2>@title</h2>
     <p>@content</p>
 </div>
 @group('form_section')
 
-<div id='form'>
+<div class="form-section">
     <div>
         <img src="@sub('image_form_left', 'url')" alt="@sub('image_form_left', 'alt')">
     </div>
     <div>
-        @hassub('form_title')
-        <h2>@sub('form_title')</h2>
-        @endsub
-        @hassub('form_text')
-        <p>@field('form_text')</p>
-        @endsub
-    </div>
-    <div>
-        <?php echo do_shortcode(get_sub_field('form_shortcode')); ?>
+        <div>
+            @hassub('form_title')
+            <h2>@sub('form_title')</h2>
+            @endsub
+            @hassub('form_text')
+            <p>@field('form_text')</p>
+            @endsub
+        </div>
+        <div>
+            <?php echo do_shortcode(get_sub_field('form_shortcode')); ?>
+        </div>
     </div>
 </div>
 @endgroup
@@ -56,17 +58,17 @@
         @endsub
         @hassub('linkedin_icon', url)
         <a href="@sub('linkedin_profile')">
-        <img src="@sub('linkedin_icon', 'url')" alt="@sub('linkedin_icon', 'alt')">
+            <img src="@sub('linkedin_icon', 'url')" alt="@sub('linkedin_icon', 'alt')">
         </a>
         @endsub
         @hassub('facebook_icon', url)
         <a href="@field('facebook_profile')">
-        <img src="@sub('facebook_icon', 'url')" alt="@sub('facebook_icon', 'alt')">
+            <img src="@sub('facebook_icon', 'url')" alt="@sub('facebook_icon', 'alt')">
         </a>
         @endsub
         @hassub('twitter_icon', url)
         <a href="@sub('twitter_profile')">
-        <img src="@sub('twitter_icon', 'url')" alt="@sub('twitter_icon', 'alt')">
+            <img src="@sub('twitter_icon', 'url')" alt="@sub('twitter_icon', 'alt')">
         </a>
         @endsub
     </div>
@@ -74,6 +76,6 @@
 @endgroup
 @hasfield('map_img', url)
 <div>
-<img src="@field('map_img', 'url')" alt="@field('map_img', 'alt')">
+    <img src="@field('map_img', 'url')" alt="@field('map_img', 'alt')">
 </div>
 @endfield

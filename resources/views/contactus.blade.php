@@ -12,7 +12,9 @@
       <div class="content">
         <main class="main">
           @yield('content')
+          <div class="contactus">
           @include('partials.contact-content')
+          </div>
         </main>
       </div>
     </div>

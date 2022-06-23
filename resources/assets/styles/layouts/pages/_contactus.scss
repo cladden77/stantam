@@ -1,0 +1,41 @@
+.contactus {
+  margin-top: 61px;
+
+  h2 {
+    font-size: 66px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  .header {
+    padding: 110px 495px 41px 130px;
+
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .form-section {
+    display: flex;
+    gap: 49px;
+
+    img {
+      max-width: 720px;
+      border-radius: 20px;
+    }
+
+    h2 {
+      color: #002d5a;
+    }
+
+    p {
+      color: #5a6265;
+    }
+  }
+}
