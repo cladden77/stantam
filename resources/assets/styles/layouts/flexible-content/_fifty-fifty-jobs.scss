@@ -1,0 +1,7 @@
+.fifty-fifty-jobs {
+  h2 {
+    color: map-get($theme-colors, "secondaryLight");
+    font-size: 1.75em;
+    font-weight: 500 !important;
+  }
+}
