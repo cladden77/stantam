@@ -62,3 +62,22 @@
     }
   }
 }
+
+.blog_posts {
+  display: flex;
+
+  .blog_post {
+    display: block;
+    max-height: 699px;
+    max-width: 520px;
+
+    img {
+      width: 100%;
+    }
+
+    .category {
+      font-size: 18px;
+      color: #49522b;
+    }
+  }
+}
