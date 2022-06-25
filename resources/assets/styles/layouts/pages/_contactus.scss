@@ -1,0 +1,64 @@
+.contactus {
+  margin-top: 61px;
+
+  h2 {
+    font-size: 66px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  .header {
+    padding: 110px 495px 41px 130px;
+
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .form-section {
+    padding: 119px 158px 177px 140px;
+    display: flex;
+    gap: 49px;
+
+    img {
+      max-width: 720px;
+      border-radius: 20px;
+    }
+
+    h2 {
+      color: #002d5a;
+    }
+
+    p {
+      color: #5a6265;
+    }
+
+    .img-left {
+      padding: 10px 0;
+    }
+  }
+
+  .connect {
+    padding: 177px;
+    margin: auto;
+    text-align: center;
+
+    div {
+      display: flex;
+      gap: 26px;
+      place-content: center;
+      padding: 34px 0;
+    }
+
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
