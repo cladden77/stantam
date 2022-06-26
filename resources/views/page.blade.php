@@ -37,6 +37,9 @@
       <?php if( get_row_layout() == 'fifty_fifty_jobs' ): ?>
       @include('flexible-content.fifty-fifty-jobs')
       <?php endif; ?>
+      <?php if( get_row_layout() == 'locations' ): ?>
+      @include('flexible-content.locations')
+      <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 
