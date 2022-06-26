@@ -51,7 +51,6 @@
     top: 109px; /* Height of navbar */
     bottom: 0;
     right: 0;
-    left: 100%;
     width: 300px;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -60,7 +59,7 @@
     background-color: #f5f5f5;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
-    transition-property: left, visibility;
+    transition-property: right, visibility;
     align-items: start;
 
     /*   Adds a subtle drop shadow   */
@@ -71,8 +70,9 @@
 
   /* Makes the nav visible with the open class */
   .offcanvas-collapse.open {
-    left: 78%;
+    // left: 78%;
     visibility: visible;
+    right: 0;
   }
 
   .navbar-expand-lg .navbar-nav {
