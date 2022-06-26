@@ -1,0 +1,22 @@
+.locations {
+  h2 {
+    color: map-get($theme-colors, "primary");
+  }
+
+  h3 {
+    color: map-get($theme-colors, "secondaryLight");
+  }
+
+  img {
+    overflow: hidden;
+    align-self: center;
+    right: 0;
+    max-height: 80vh;
+    position: absolute;
+
+    @include media-breakpoint-down(md) {
+      position: unset;
+      right: unset;
+    }
+  }
+}
