@@ -13,6 +13,10 @@
 }
 
 .banner {
+  .container-fluid {
+    flex-wrap: nowrap;
+  }
+
   .navbar.navbar-expand-lg.fixed-top.navbar-offcanvas {
     background-color: #f5f5f5;
   }
@@ -24,7 +28,7 @@
       max-width: 50%;
 
       @include media-breakpoint-down(md) {
-        max-width: 100%;
+        max-width: 50%;
       }
     }
 
@@ -61,6 +65,11 @@
     transition-duration: 0.3s;
     transition-property: right, visibility;
     align-items: start;
+
+    @include media-breakpoint-down(md) {
+      top: 90px;
+      width: 100%;
+    }
 
     /*   Adds a subtle drop shadow   */
     -moz-background-clip: padding;     /* Firefox 3.6 */
