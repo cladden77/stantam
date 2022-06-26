@@ -1,4 +1,4 @@
-<header class="banner">
+<header class="banner pb-5">
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-offcanvas">
   <div class="container-fluid py-3 px-0 px-md-5 px-sm-0">
