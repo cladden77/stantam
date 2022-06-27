@@ -3,7 +3,7 @@
             <?php if( have_rows('timeline_repeater') ): ?>
             <?php while( have_rows('timeline_repeater') ): the_row(); ?>
             <div class="row">
-            <div class="card @sub('position') my-3" style="width: 30rem;">
+            <div class="card @sub('position') my-3">
                <div class="timeline-content">
                     @hassub('title')
                     <div class="title-wrapper">
