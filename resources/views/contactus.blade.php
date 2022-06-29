@@ -14,6 +14,7 @@
           @yield('content')
           <div class="contactus">
           @include('partials.contact-content')
+          @include('partials.blog-insights')
           </div>
         </main>
       </div>
