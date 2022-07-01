@@ -1,5 +1,5 @@
 {{--
-  Template Name: Careers Page
+  Template Name: What Is ERC
 --}}
 
 <!doctype html>
@@ -12,12 +12,8 @@
       <div class="content">
         <main class="main">
           @yield('content')
-          <div class="careers">
-          @include('partials.title-head')
-          @include('partials.job-openings')
-          @include('partials.our-culture')
-          @include('partials.experts')
-          @include('partials.blog-insights')
+          <div class="erc">
+          @include('partials.erc-content')
           </div>
         </main>
       </div>
