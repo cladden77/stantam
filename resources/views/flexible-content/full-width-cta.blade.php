@@ -10,6 +10,10 @@ if( get_sub_field('background_color') == 'blue' ) { ?>
                     <h2>@sub('cta_text')</h2>
                     @endsub
 
+                    @hassub('cta_subheader')
+                    <h3>@sub('cta_subheader')</h3>
+                    @endsub
+
                     <div class="text-center">
                     @hassub('cta_form')
                     @sub('cta_form')
@@ -37,6 +41,10 @@ if( get_sub_field('background_color') == 'gray' ) { ?>
                 <div class="col-10 text-center">
                     @hassub('cta_text')
                     <h2>@sub('cta_text')</h2>
+                    @endsub
+
+                    @hassub('cta_subheader')
+                    <h3>@sub('cta_subheader')</h3>
                     @endsub
 
                     <div class="text-center">
