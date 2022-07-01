@@ -1,0 +1,152 @@
+.services-hero {
+  top: 25px;
+  color: $white;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    top: 0;
+  }
+
+  h1 {
+    @include media-breakpoint-down(sm) {
+      font-size: 2em;
+    }
+  }
+
+  &--blue {
+    background-color: #007ac1;
+  }
+
+  &--gray {
+    background-color: #5a6265;
+  }
+
+  &--green {
+    background-color: #798445;
+  }
+
+  h2 {
+    font-size: 1.5em;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1em;
+    }
+  }
+
+  .cta-arrow {
+    p {
+      clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0 49%, 0% 0%);
+      background-color: white;
+      color: black;
+      padding: 20px 40px 20px 20px;
+      mix-blend-mode: screen;
+      font-weight: 700 !important;
+
+      @include media-breakpoint-down(md) {
+        clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 0%);
+        background-color: white;
+        color: black;
+        padding: 20px 40px 20px 20px;
+        mix-blend-mode: screen;
+        font-weight: 700 !important;
+      }
+    }
+  }
+
+  .services-hero__form-wrapper {
+    background-color: $white;
+    border-radius: 20px;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 30px !important;
+      margin-right: 30px !important;
+    }
+
+    h3 {
+      color: map-get($theme-colors, "primary");
+      font-weight: 700 !important;
+    }
+
+    p {
+      color: #5a6265;
+    }
+  }
+
+  // Form styling
+  .gform_wrapper.gravity-theme .gfield_label {
+    visibility: hidden;
+  }
+
+  .gform_wrapper.gravity-theme input {
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+  }
+
+  /* Chrome/Opera/Safari */
+  .gform_wrapper.gravity-theme input::-webkit-input-placeholder {
+    color: #eaeaea;
+  }
+
+  /* Firefox 19+ */
+  .gform_wrapper.gravity-theme input::-moz-placeholder {
+    color: #eaeaea;
+  }
+
+  /* IE 10+ */
+  .gform_wrapper.gravity-theme input:-ms-input-placeholder {
+    color: #eaeaea;
+  }
+
+  /* Firefox 18- */
+  .gform_wrapper.gravity-theme input:-moz-placeholder {
+    color: #eaeaea;
+  }
+
+  .gform_wrapper.gravity-theme .gform_fields {
+    grid-row-gap: 0;
+  }
+
+  .gform_wrapper.gravity-theme .gfield textarea {
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+  }
+
+  .gform_wrapper.gravity-theme .gfield textarea::-webkit-input-placeholder {
+    color: #eaeaea;
+  }
+
+  /* Firefox 19+ */
+  .services-hero .gform_wrapper.gravity-theme textarea::-moz-placeholder {
+    color: #eaeaea;
+  }
+
+  /* IE 10+ */
+  .services-hero .gform_wrapper.gravity-theme textarea::-ms-input-placeholder {
+    color: #eaeaea;
+  }
+
+  .gform_wrapper.gravity-theme .gform_footer input#gform_submit_button_2.gform_button.button {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1em 3em;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.25em;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease !important;
+    text-decoration: none;
+    color: map-get($theme-colors, "primaryLight");
+    background-color: transparent;
+    border: 1px solid #007ac1;
+
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      background-color: map-get($theme-colors, "primaryLight");
+    }
+  }
+}
