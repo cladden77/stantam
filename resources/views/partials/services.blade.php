@@ -1,11 +1,11 @@
-@extends('layouts.generalpage')
+@extends('layouts.services')
 
-@section('general_content')
+@section('services_content')
   @while(have_posts()) @php the_post() @endphp
-  <?php if( have_rows('general_flexible_content') ): ?>
-  <?php while( have_rows('general_flexible_content') ): the_row(); ?>
+  <?php if( have_rows('flexible_content') ): ?>
+  <?php while( have_rows('flexible_content') ): the_row(); ?>
       <?php if( get_row_layout() == 'page_hero' ): ?>
-          @include('flexible-content.page-hero')
+          @include('flexible-content.hp-hero')
       <?php endif; ?>
       <?php if( get_row_layout() == 'three_col' ): ?>
           @include('flexible-content.three-col')
@@ -24,21 +24,6 @@
       <?php endif; ?>
       <?php if( get_row_layout() == 'recent_post_cards' ): ?>
       @include('flexible-content.recent-post-cards')
-      <?php endif; ?>
-      <?php if( get_row_layout() == 'timeline' ): ?>
-      @include('flexible-content.timeline')
-      <?php endif; ?>
-      <?php if( get_row_layout() == 'about_fifty_fifty' ): ?>
-      @include('flexible-content.about-fifty-fifty')
-      <?php endif; ?>
-      <?php if( get_row_layout() == 'video' ): ?>
-      @include('flexible-content.video')
-      <?php endif; ?>
-      <?php if( get_row_layout() == 'fifty_fifty_jobs' ): ?>
-      @include('flexible-content.fifty-fifty-jobs')
-      <?php endif; ?>
-      <?php if( get_row_layout() == 'locations' ): ?>
-      @include('flexible-content.locations')
       <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

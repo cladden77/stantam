@@ -1,6 +1,6 @@
 {{-- Homepage Hero blade --}}
 
-<section class="hp-hero container-fluid d-flex" style="background: url('@sub('hero_image')') center center/cover no-repeat;">
+<section class="hp-hero container-fluid d-flex pt-5" style="background: url('@sub('hero_image')') center center/cover no-repeat;">
     <div class="row align-items-center pl-0 pl-lg-5 pl-md-0 hp-hero__content-wrapper my-auto">
         <div class="text-center text-md-left text-sm-center px-5 py-5">
             @hassub('hero_header')
