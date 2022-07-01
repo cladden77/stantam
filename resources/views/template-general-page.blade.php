@@ -50,6 +50,9 @@
     <?php if( get_row_layout() == 'services_fifty_fifty' ): ?>
     @include('flexible-content.services-fifty-fifty')
     <?php endif; ?>
+    <?php if( get_row_layout() == 'services_fifty_fifty_image' ): ?>
+    @include('flexible-content.services-fifty-fifty-image')
+    <?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
