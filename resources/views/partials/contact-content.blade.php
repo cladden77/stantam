@@ -14,7 +14,7 @@
             <h2>@sub('form_title')</h2>
             @endsub
             @hassub('form_text')
-            <p>@field('form_text')</p>
+            <p>@sub('form_text')</p>
             @endsub
         </div>
         <div>
@@ -102,6 +102,3 @@
     </div>
 </div>
 @endgroup
-<div>
-    
-</div>

@@ -1,5 +1,5 @@
 {{--
-  Template Name: Contact Us Page
+  Template Name: Careers Page
 --}}
 
 <!doctype html>
@@ -12,9 +12,11 @@
       <div class="content">
         <main class="main">
           @yield('content')
-          <div class="contactus">
+          <div class="careers">
           @include('partials.title-head')
-          @include('partials.contact-content')
+          @include('partials.job-openings')
+          @include('partials.our-culture')
+          @include('partials.experts')
           @include('partials.blog-insights')
           </div>
         </main>

@@ -61,4 +61,52 @@
       height: 38px;
     }
   }
+
+  .blog_insights {
+    padding: 103px 140px 146px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .blog_posts {
+      display: flex;
+      gap: 41px;
+      padding-top: 109px;
+
+      .blog_post {
+        display: block;
+        height: 699px;
+        width: 520px;
+        position: relative;
+        border: 1px solid #a191911c;
+        border-radius: 20px;
+
+        img {
+          width: 100%;
+          border-radius: 20px 20px 0 0;
+        }
+
+        p {
+          font-size: 25px;
+          color: #808080;
+        }
+
+        .title {
+          font-size: 36px;
+          color: #007ac1;
+        }
+
+        .category {
+          font-size: 18px;
+          color: #49522b;
+        }
+
+        .readmore {
+          position: absolute;
+          bottom: 32px;
+        }
+      }
+    }
+  }
 }

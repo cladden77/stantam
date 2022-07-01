@@ -1,5 +1,5 @@
 {{--
-  Template Name: Contact Us Page
+  Template Name: What Is ERC
 --}}
 
 <!doctype html>
@@ -12,10 +12,8 @@
       <div class="content">
         <main class="main">
           @yield('content')
-          <div class="contactus">
-          @include('partials.title-head')
-          @include('partials.contact-content')
-          @include('partials.blog-insights')
+          <div class="erc">
+          @include('partials.erc-content')
           </div>
         </main>
       </div>
