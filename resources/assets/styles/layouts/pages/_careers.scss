@@ -1,0 +1,45 @@
+.careers {
+  margin-top: 61px;
+
+  h2 {
+    font-size: 66px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  .header {
+    padding: 110px 495px 41px 130px;
+
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .our_culture {
+    display: block;
+
+    h3 {
+      font-size: 70px;
+      color: #123655;
+    }
+
+    h4 {
+      font-size: 48px;
+      color: #798445;
+    }
+
+    .values {
+      display: grid;
+
+      .value {
+        display: block;
+      }
+    }
+  }
+}
