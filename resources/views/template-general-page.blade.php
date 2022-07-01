@@ -47,6 +47,9 @@
     <?php if( get_row_layout() == 'services_hero' ): ?>
     @include('flexible-content.services-hero')
     <?php endif; ?>
+    <?php if( get_row_layout() == 'services_fifty_fifty' ): ?>
+    @include('flexible-content.services-fifty-fifty')
+    <?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
