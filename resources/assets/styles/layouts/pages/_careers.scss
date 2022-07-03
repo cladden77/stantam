@@ -1,8 +1,17 @@
 .careers {
   margin-top: 61px;
 
-  h2 {
+  .container {
+    max-width: 1660px;
+  }
+
+  h1 {
     font-size: 66px;
+  }
+
+  h2 {
+    font-size: 70px;
+    color: #123655;
   }
 
   p {
@@ -10,9 +19,9 @@
   }
 
   .header {
-    padding: 110px 495px 41px 130px;
+    padding: 110px 0 41px;
 
-    h2 {
+    h1 {
       color: #fff;
     }
 
@@ -21,12 +30,69 @@
     }
   }
 
+  .job_openings {
+    margin: 100px 0;
+
+    .filter {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      border: none;
+      border-radius: 10px;
+
+      select {
+        background: #ededed;
+        padding: 14px 25px;
+      }
+    }
+
+    .jobs {
+      padding-top: 100px;
+      align-items: center;
+
+      .job {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .job_btn {
+        position: relative;
+        background: #007ac1;
+        color: #fff;
+        width: 133px;
+        padding: 22px 22px;
+        text-align: center;
+        border-radius: 10px;
+        justify-self: end;
+
+        &:hover {
+          border: 1px solid #007ac1;
+          color: #007ac1;
+          background: #fff;
+        }
+
+        a {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
   .our_culture {
     display: block;
+    padding: 100px 0;
 
-    h3 {
+    h2 {
       font-size: 70px;
       color: #123655;
+      text-align: center;
     }
 
     h4 {
@@ -35,10 +101,86 @@
     }
 
     .values {
-      display: grid;
+      padding: 100px 0 25px;
+
+      h4 {
+        padding-bottom: 60px;
+        font-style: italic;
+      }
 
       .value {
         display: block;
+
+        div {
+          padding-bottom: 70px;
+        }
+      }
+    }
+  }
+
+  .experts {
+    .experts_header {
+      margin-bottom: 96px;
+      text-align: center;
+
+      h2 {
+        padding-bottom: 44px;
+      }
+
+      p {
+        font-size: 28px;
+        color: #798445;
+      }
+    }
+
+    .experts_photos {
+      .photo {
+        position: relative;
+        margin: 20px 22px;
+        padding: 0;
+
+        &:first-of-type {
+          margin: 20px 22px 20px 0;
+        }
+
+        &:last-of-type {
+          margin: 20px 0 20px 22px;
+        }
+      }
+
+      .photo img {
+        width: 100%;
+      }
+
+      .overlay {
+        visibility: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        padding-top: 15%;
+        padding-left: 10%;
+        background-color: #798445e0;
+        color: white;
+      }
+
+      .photo:hover .overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .name {
+        margin-bottom: 20%;
+
+        span {
+          font-weight: 600 !important;
+          font-size: 26px;
+        }
       }
     }
   }
