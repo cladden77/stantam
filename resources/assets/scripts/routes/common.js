@@ -13,6 +13,75 @@ export default {
     //   dots: true,
     // });
     
+    // Jobs Filter
+
+    //Filter
+
+    function CheckJobs(a, b, c) {
+      jQuery('.job').each(function(index, value) {
+          let l = jQuery(this).attr('data-location');
+          let t = jQuery(this).attr('data-team');
+          let p = jQuery(this).attr('data-position');
+
+          if (a != 'all_locations' && b != 'all_teams' && c != 'all_positions') {
+              if (l == a && t == b && p == c) {
+                  jQuery(this).show();
+              } else {
+                  jQuery(this).hide();
+              }
+          } else if (a == 'all_locations' && b != 'all_teams' && c != 'all_positions') {
+              if (t == b && p == c) {
+                  jQuery(this).show();
+              } else {
+                  jQuery(this).hide();
+              }
+          } else if (a == 'all_locations' && b == 'all_teams' && c != 'all_positions') {
+              if (p == c) {
+                  jQuery(this).show();
+              } else {
+                  jQuery(this).hide();
+              }
+          } else if (a == 'all_locations' && b != 'all_teams' && c == 'all_positions') {
+              if (t == b) {
+                  jQuery(this).show();
+              } else {
+                  jQuery(this).hide();
+              }
+          } else if (a != 'all_locations' && b == 'all_teams' && c == 'all_positions') {
+              if (l == a) {
+                  jQuery(this).show();
+              } else {
+                  jQuery(this).hide();
+              }
+          } else if (a != 'all_locations' && b != 'all_teams' && c == 'all_positions') {
+              if (l == a && t == b) {
+                  jQuery(this).show();
+              } else {
+                  jQuery(this).hide();
+              }
+          } else if (a != 'all_locations' && b == 'all_teams' && c != 'all_positions') {
+              if (l == a && p == c) {
+                  jQuery(this).show();
+              } else {
+                  jQuery(this).hide();
+              }
+          } else {
+              jQuery(this).show();
+          }
+
+
+      })
+  }
+
+
+
+  jQuery('.filter select').change(function() {
+      let choices = [];
+      choices.push(jQuery('#location').children('option:selected').val());
+      choices.push(jQuery('#team').children('option:selected').val());
+      choices.push(jQuery('#position').children('option:selected').val());
+      CheckJobs(choices[0], choices[1], choices[2])
+  })
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
