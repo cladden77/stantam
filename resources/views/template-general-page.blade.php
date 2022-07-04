@@ -56,6 +56,9 @@
     <?php if( get_row_layout() == 'full_width_content' ): ?>
     @include('flexible-content.full-width-content')
     <?php endif; ?>
+    <?php if( get_row_layout() == 'success_stories' ): ?>
+    @include('flexible-content.success-stories')
+    <?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
