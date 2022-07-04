@@ -1,7 +1,7 @@
-<section class="success-stories">
-    <div class="container-fluid">
+<section class="success-stories py-3">
+    <div class="container-fluid p-0">
         <div class="row justify-content-center">
-            <div class="col">
+            <div class="col text-center pb-5">
                 @hassub('header')
                 <h2>@sub('header')</h2>
                 @endsub
@@ -12,18 +12,17 @@
               </div>
 
             <?php if( have_rows('success_story') ): ?>
+            <div class="row no-gutters">
             <?php while( have_rows('success_story') ): the_row(); ?>
-            <div class="row">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="col card-group">
+                <div class="card img-fluid">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title text-center">@sub('title')</h4>
                     </div>
-                  </div>
-            </div>
+                  </div></div>
             <?php endwhile; ?>
+            </div>
             <?php endif; ?>
         </div>
     </div>

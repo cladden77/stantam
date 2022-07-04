@@ -1,0 +1,30 @@
+.success-stories {
+  h2 {
+    font-size: 2.25em;
+    color: map-get($theme-colors, "primary");
+
+    @include media-breakpoint-down(md) {
+      font-size: 2em;
+    }
+  }
+
+  h3 {
+    font-size: 1.25em;
+    color: #798445;
+    font-weight: 300 !important;
+  }
+
+  h4 {
+    color: $white;
+  }
+
+  .card-img-overlay {
+    background-color: rgba(121, 132, 69, 0.9);
+    top: 50%;
+    transition: top 0.5s ease-out;
+
+    &:hover {
+      top: 0;
+    }
+  }
+}
