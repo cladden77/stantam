@@ -13,7 +13,7 @@
         <main class="main">
           @yield('content')
           <div class="erc">
-          @include('partials.erc-content')
+          @include('partials.erc')
           </div>
         </main>
       </div>
