@@ -1,7 +1,3 @@
-<div class="header" style="background-image:url(@field('header_background_image', 'url'))">
-    <h2>@title</h2>
-    <p>@content</p>
-</div>
 @group('form_section')
 
 <div class="form-section">
@@ -83,22 +79,27 @@
 </div>
 @endfield
 @group('reviews')
-<div>
-    <div>
-        <h2>@sub('title')</h2>
-        <div>
-            <span>@sub('button_text')</span>
-            <a href="@sub('button_url')"></a>
+<div class="reviews container-fluid"">
+    <div class="row">
+        <div class="title col-4">
+            <h2>@sub('title')</h2>
+            <div class="btn">
+                <span>@sub('button_text')</span>
+                <a href="@sub('button_url')"></a>
+            </div>
         </div>
-    </div>
-    <div id="slider">
-        @fields('review_repeat')
-        <div>
-            <img src="@sub('logo', 'url')" alt="@field('logo', 'alt')">
-            <p>@sub('review_text')</p>
-            <p>@sub('review_name')</p>
+        <div class="col-8">
+            <div class="review_slider">
+                @fields('review_repeat')
+                <div class="review">
+                    <img src="@sub('logo', 'url')" alt="@field('logo', 'alt')">
+                    <p>@sub('review_text')</p>
+                    <p class="name">@sub('review_name')</p>
+                </div>
+                @endfields
+            </div>
         </div>
-        @endfields
     </div>
 </div>
 @endgroup
+</div>

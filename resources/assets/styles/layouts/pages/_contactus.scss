@@ -1,3 +1,7 @@
+.container {
+  max-width: 1660px;
+}
+
 .contactus {
   margin-top: 61px;
 
@@ -62,6 +66,62 @@
     }
   }
 
+  .reviews {
+    padding: 100px 0;
+    background: linear-gradient(90deg, #798445 50%, #fff 50%);
+
+    h2 {
+      color: #fff;
+    }
+
+    .title {
+      padding-left: 140px;
+    }
+
+    .btn {
+      position: relative;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      padding: 22px 23px;
+      color: #fff;
+
+      &:hover {
+        color: #798445;
+        background: #fff;
+      }
+
+      span {
+        font-size: 21px;
+        font-weight: 600;
+      }
+
+      a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+    }
+
+    .review {
+      padding: 15px 10px;
+      border-radius: 20px;
+      border: 1px solid #faf7f7;
+      background: #fff;
+
+      p {
+        font-size: 25px;
+        color: #808080;
+      }
+
+      p.name {
+        color: #5a6265;
+      }
+    }
+  }
+
   .blog_insights {
     padding: 103px 140px 146px;
 
@@ -84,12 +144,23 @@
 
         img {
           width: 100%;
+          height: 315px;
           border-radius: 20px 20px 0 0;
         }
 
         p {
           font-size: 25px;
           color: #808080;
+        }
+
+        .blog_content {
+          padding: 24px 32px 37px 23px;
+
+          a.title {
+            font-size: 36px;
+            color: #007ac1;
+            padding: 22px 0;
+          }
         }
 
         .title {
@@ -105,6 +176,19 @@
         .readmore {
           position: absolute;
           bottom: 32px;
+          margin-left: 23px;
+        }
+      }
+
+      .slick-prev {
+        &::before {
+          content: url("http://127.0.0.1:8084/stantam/wp-content/uploads/2022/07/np_chevron_1528.svg") !important;
+        }
+      }
+
+      .slick-next {
+        &::before {
+          content: "→";
         }
       }
     }
