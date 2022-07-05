@@ -16,11 +16,12 @@
 
   h4 {
     color: $white;
+    text-transform: uppercase;
   }
 
   .card-img-overlay {
     background-color: rgba(121, 132, 69, 0.9);
-    top: 50%;
+    top: 60%;
     transition: top 0.5s ease-out;
 
     &:hover {
