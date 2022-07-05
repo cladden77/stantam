@@ -12,13 +12,22 @@ export default {
     //   autoplaySpeed: 5000,
     //   dots: true,
     // });
-    
-    // Jobs Filter
 
+    jQuery('.blog_posts').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    })
+
+    jQuery('.review_slider').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    })
     //Filter
 
     function CheckJobs(a, b, c) {
-      jQuery('.job').each(function(index, value) {
+      jQuery('.job').each(function() {
           let l = jQuery(this).attr('data-location');
           let t = jQuery(this).attr('data-team');
           let p = jQuery(this).attr('data-position');
@@ -75,13 +84,14 @@ export default {
 
 
 
-  jQuery('.filter select').change(function() {
+  jQuery('.filter select').click(function() {
       let choices = [];
       choices.push(jQuery('#location').children('option:selected').val());
       choices.push(jQuery('#team').children('option:selected').val());
       choices.push(jQuery('#position').children('option:selected').val());
       CheckJobs(choices[0], choices[1], choices[2])
   })
+    
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
