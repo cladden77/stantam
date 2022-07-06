@@ -2,7 +2,7 @@
 import 'jquery';
 
 // Import Slick
-// import 'slick-carousel/slick/slick.min';
+import 'slick-carousel/slick/slick.min';
 
 // Import everything from autoload
 import './autoload/**/*'

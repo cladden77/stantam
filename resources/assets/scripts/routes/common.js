@@ -2,16 +2,8 @@ export default {
   init() {
     // JavaScript to be fired on all pages
 
-    // // Slick Carousel
-    // $('.slick-carousel').slick();
-
-    // $('.hero__row__wrap__slider').slick({
-    //   slidesToShow: 1,
-    //   slidesToScroll: 1,
-    //   // autoplay: true,
-    //   autoplaySpeed: 5000,
-    //   dots: true,
-    // });
+    // Slick Carousel
+    $('.slick-carousel').slick();
 
     jQuery('.blog_posts').slick({
       infinite: false,
