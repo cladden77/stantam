@@ -59,10 +59,10 @@
 
     <div class="row pt-5">
       <div class="col-12 text-center text-sm-center text-md-left social-icons">
-        <a href="#"><img src="/app/uploads/2022/06/twitter-icon.svg" alt="twitter"></a>
-        <a href="#"><img src="/app/uploads/2022/06/facebook-icon.svg" alt="Facebook"></a>
-        <a href="#"><img src="/app/uploads/2022/06/google-icon.svg" alt="Google"></a>
-        <a href="#"><img src="/app/uploads/2022/06/linkedin-icon.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="/wp-content/uploads/2022/06/twitter-icon.svg" alt="twitter"></a>
+        <a href="#"><img src="/wp-content/uploads/2022/06/facebook-icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="/wp-content/uploads/2022/06/google-icon.svg" alt="Google"></a>
+        <a href="#"><img src="/wp-content/uploads/2022/06/linkedin-icon.svg" alt="LinkedIn"></a>
       </div>
     </div>
       <div class="row no-gutters justify-content-between copyright">

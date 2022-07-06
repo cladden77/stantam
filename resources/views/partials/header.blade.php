@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-offcanvas">
   <div class="container-fluid py-3 px-0 px-md-5 px-sm-0">
 
-  <a class="navbar-brand" href="{{ home_url('/') }}"><img src="http://stentam.local/app/uploads/2022/06/Stentam-logo.png" alt="Stenson Tamaddon" /></a>
+  <a class="navbar-brand" href="{{ home_url('/') }}"><img src="{{ home_url('/') }}wp-content/uploads/2022/06/Stentam-logo.png" alt="Stenson Tamaddon" /></a>
 
  <button class="navbar-toggler d-block" type="button" id="navToggle">
   <span class="navbar-toggler-icon"></span>
