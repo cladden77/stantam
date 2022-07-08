@@ -21,15 +21,20 @@
   p {
     padding-right: 10em;
     line-height: 2.5em;
+    font-size: 18px;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       padding-right: 0 !important;
     }
   }
 
   img {
     border-radius: 20px !important;
-    max-width: 80%;
+    max-width: 65%;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 80%;
+    }
   }
 
   .carousel-indicators {

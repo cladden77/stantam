@@ -30,10 +30,10 @@
 	
 	 <div class="carousel-item <?php if($i == 0) echo 'active';?>">
             <div class="row align-items-center justify-content-center">
-            <div class="col-12 col-md-6 col-sm-12 text-center">
+            <div class="col-12 col-lg-6 text-center">
                 <img src="@sub('slide_image')" alt="@sub('slide_image')">
             </div>
-            <div class="col-12 col-md-6 col-sm-12 text-center text-md-left text-sm-center pt-3 pt-md-0 pt-sm-3">
+            <div class="col-12 col-lg-6 col-sm-12 text-center text-lg-left text-sm-center pt-3">
                 @sub('slide_content')
                 <a class="button button--primary mt-3 mt-md-5 mt-sm-3" href="@sub('slide_button', 'url')">@sub('slide_button', 'title')</a>
             </div>
