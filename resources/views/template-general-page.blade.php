@@ -59,6 +59,9 @@
     <?php if( get_row_layout() == 'success_stories' ): ?>
     @include('flexible-content.success-stories')
     <?php endif; ?>
+    <?php if( get_row_layout() == 'filing_steps' ): ?>
+    @include('flexible-content.filing-steps')
+    <?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 

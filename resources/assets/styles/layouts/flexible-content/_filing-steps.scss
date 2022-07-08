@@ -1,0 +1,152 @@
+.filing-steps {
+  position: relative;
+  padding-bottom: 75px;
+
+  /* The actual timeline (the vertical ruler) */
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #007ac1;
+    top: 175px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    max-height: 640px;
+    z-index: 0;
+
+    @include media-breakpoint-down(lg) {
+      max-height: 450px;
+      top: 200px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-height: 500px;
+      top: 245px;
+    }
+  }
+
+  .arrow {
+    content: "";
+    background-color: #007ac1;
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+    clip-path: polygon(50% 25%, 100% 0, 50% 100%, 49% 100%, 25% 50%, 0% 0%);
+    top: 30px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    color: map-get($theme-colors, "primary");
+
+    @include media-breakpoint-down(md) {
+      font-size: 2em;
+    }
+  }
+
+  h3 {
+    font-size: 1.25em;
+    color: #798445;
+    font-weight: 300 !important;
+  }
+
+  &-content {
+    position: relative;
+    top: -10px;
+  }
+
+  /* left card fix */
+
+  .left {
+    left: 0;
+  }
+
+  .left hr {
+    border: none;
+    border-top: 6px dotted #007ac1;
+    color: #fff;
+    background-color: transparent;
+    height: 1px;
+    width: 20%;
+    left: 475px;
+    top: 40%;
+    position: relative;
+    z-index: -1;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  /* End Left card fix */
+
+  .right {
+    left: 50%;
+  }
+
+  .right hr {
+    border: none;
+    border-top: 6px dotted #007ac1;
+    color: #fff;
+    background-color: transparent;
+    height: 1px;
+    width: 20%;
+    left: -100px;
+    top: 40%;
+    position: relative;
+    z-index: -1;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -113px;
+  }
+
+  div.right:nth-child(odd) {
+    left: 670px;
+
+    @include media-breakpoint-down(lg) {
+      left: 0;
+    }
+  }
+
+  /* End Right card fix */
+
+  .card {
+    width: 30rem;
+    background-color: #798445;
+    border-radius: 20px;
+    color: $white !important;
+
+    @include media-breakpoint-down(lg) {
+      width: 80%;
+      margin: auto;
+    }
+
+    /* The circles on the timeline */
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -104px;
+      background-color: #007ac1;
+      top: 45%;
+      border-radius: 50%;
+      z-index: 1;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+}
