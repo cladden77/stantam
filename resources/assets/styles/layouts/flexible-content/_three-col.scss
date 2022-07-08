@@ -14,13 +14,8 @@
   }
 
   .card {
-    border: 5px solid #798445;
+    border: 2px solid #000;
     border-radius: 20px;
-
-    &:hover {
-      background-color: #798445;
-      color: $white !important;
-    }
 
     h4 {
       color: map-get($theme-colors, "secondaryLight");
@@ -33,9 +28,5 @@
       background-color: transparent;
       border-top: none;
     }
-  }
-
-  .card:hover h4 {
-    color: $white;
   }
 }
