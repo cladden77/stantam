@@ -1,8 +1,9 @@
 <section class="timeline py-5">
     <div class="container">
             <?php if( have_rows('timeline_repeater') ): ?>
-            <?php while( have_rows('timeline_repeater') ): the_row(); ?>
             <div class="row">
+            <?php while( have_rows('timeline_repeater') ): the_row(); ?>
+            <div class="col-12 col-lg-6 col-md-12 column">
             <div class="card @sub('position') my-3">
                <div class="timeline-content">
                     @hassub('title')
@@ -26,6 +27,7 @@
             </div>
         </div>
             <?php endwhile; ?>
+        </div>
             <?php endif; ?>
     </div>
 </section>

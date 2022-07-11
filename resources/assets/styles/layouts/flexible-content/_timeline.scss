@@ -18,8 +18,19 @@
     z-index: 0;
   }
 
+  @media (max-width: 1200px) {
+    .column {
+      max-width: 100% !important;
+      flex: 0 0 100%;
+    }
+  }
+
   .left {
-    left: 0;
+    left: -15px;
+
+    @include media-breakpoint-down(lg) {
+      left: 0;
+    }
   }
 
   /* End Left card fix */
@@ -40,20 +51,18 @@
   }
 
   .right {
-    left: 50%;
+    left: 85px;
+    top: 260px;
+
+    @include media-breakpoint-down(lg) {
+      left: 0;
+      top: 0;
+    }
   }
 
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -113px;
-  }
-
-  div.right:nth-child(odd) {
-    left: 670px;
-
-    @include media-breakpoint-down(lg) {
-      left: 0;
-    }
   }
 
   .right.card::before {
@@ -79,7 +88,7 @@
     border-radius: 20px;
 
     @include media-breakpoint-down(lg) {
-      width: 80%;
+      width: 100%;
       margin: auto;
     }
 
