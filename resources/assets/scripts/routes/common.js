@@ -16,6 +16,7 @@ export default {
       slidesToShow: 3,
       slidesToScroll: 1,
     })
+
     //Filter
 
     function CheckJobs(a, b, c) {
@@ -103,11 +104,6 @@ export default {
         scrollTop: dest,
       }, 600, 'swing');
     });
-
-    //nav menu
-    $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
-      $('.offcanvas-collapse').toggleClass('open')
-    })
     
   },
 };
