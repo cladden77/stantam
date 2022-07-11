@@ -8,8 +8,8 @@
   &::before {
     content: "";
     position: absolute;
-    width: 6px;
-    background-color: #007ac1;
+    width: 4px;
+    background-color: $black;
     top: 240px;
     bottom: 0;
     left: 50%;
@@ -39,11 +39,11 @@
   .left.card::before {
     content: "";
     position: absolute;
-    background-color: #007ac1;
+    background-color: $black;
     width: 87px;
     left: 477px;
     top: 174px;
-    height: 7px;
+    height: 4px;
 
     @include media-breakpoint-down(lg) {
       display: none;
@@ -68,11 +68,11 @@
   .right.card::before {
     content: "";
     position: absolute;
-    background-color: #007ac1;
-    width: 87px;
+    background-color: $black;
+    width: 90px;
     right: 477px;
     top: 174px;
-    height: 7px;
+    height: 4px;
 
     @include media-breakpoint-down(lg) {
       display: none;
@@ -99,7 +99,7 @@
       width: 25px;
       height: 25px;
       right: -104px;
-      background-color: #007ac1;
+      background-color: $black;
       top: 165px;
       border-radius: 50%;
       z-index: 1;
