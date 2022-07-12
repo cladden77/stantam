@@ -1,6 +1,4 @@
 .careers {
-  margin-top: 61px;
-
   h1 {
     font-size: 66px;
   }
@@ -11,14 +9,26 @@
   }
 
   p {
-    font-size: 26px;
+    font-size: 18px;
+    margin-bottom: 0;
   }
 
   .header {
-    padding: 110px 0 41px;
+    padding: rem(70) 0;
+    color: $white;
+
+    &__background {
+      height: 300px;
+    }
 
     h1 {
-      color: #fff;
+      font-size: 3em;
+    }
+
+    h2 {
+      line-height: 1.5em;
+      font-weight: 300 !important;
+      font-size: 1.25em;
     }
 
     p {
@@ -27,8 +37,6 @@
   }
 
   .job_openings {
-    margin: 100px 0;
-
     .filter {
       display: flex;
       gap: 28px;
@@ -41,9 +49,11 @@
       }
 
       h3 {
-        size: 42px;
+        size: 32px;
         color: #002d5a;
         font-weight: 600 !important;
+        padding-bottom: 0;
+        margin-bottom: 0;
       }
 
       select {
@@ -51,38 +61,23 @@
         padding: 14px 25px;
         border: none;
         border-radius: 10px;
-        font-size: 26px;
+        font-size: 18px;
         color: #5a6265;
       }
 
       option {
-        font-size: 26px;
+        font-size: 18px;
         color: #5a6265;
       }
     }
 
     .jobs {
-      padding-top: 100px;
-      align-items: center;
-
-      @media screen and (max-width: 480px) {
-        text-align: center;
-        padding-top: 50px;
-      }
-
-      .job {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        margin: 20px 0;
-
-        @media screen and (max-width: 480px) {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          align-items: center;
-          margin: 20px 0;
-          place-items: center;
-        }
+      h3 {
+        font-size: 22px;
+        color: #002d5a;
+        font-weight: 600 !important;
+        padding-bottom: 0;
+        margin-bottom: 0;
       }
 
       .job_btn {
@@ -90,7 +85,7 @@
         background: #007ac1;
         color: #fff;
         width: 133px;
-        padding: 22px 22px;
+        padding: 10px 22px;
         text-align: center;
         border-radius: 10px;
         justify-self: end;
