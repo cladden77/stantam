@@ -1,18 +1,4 @@
 .contactus {
-  h2 {
-    color: map-get($theme-colors, "primary");
-    font-size: 2.25em;
-
-    @include media-breakpoint-down(sm) {
-      font-size: 1.75em;
-    }
-  }
-
-  p {
-    font-size: 18px;
-    margin-bottom: 0 !important;
-  }
-
   .header {
     padding: rem(70) 0;
     color: $white;
@@ -143,7 +129,6 @@
   }
 
   .reviews {
-    padding: 100px 0;
     background: linear-gradient(90deg, #798445 50%, #fff 50%);
 
     h2 {
@@ -179,6 +164,13 @@
         top: 0;
         z-index: 1;
       }
+    }
+
+    .slick-slide {
+      max-width: 300px;
+      width: 100% !important;
+      margin: auto;
+      display: inline-flex;
     }
 
     .review {
@@ -265,6 +257,103 @@
       .slick-next {
         &::before {
           content: "→";
+        }
+      }
+    }
+  }
+
+  .contactus .footer {
+    background-color: #123655;
+    color: map-get($theme-colors, "offWhite");
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    hr {
+      max-width: 40%;
+      border: 1px solid #6e793c;
+      margin-left: 0;
+    }
+
+    .social-icons a img {
+      max-height: 80%;
+      padding: 10px;
+    }
+
+    .footer .social-icons a img {
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: map-get($theme-colors, "primaryLight");
+      }
+    }
+
+    .menu-footer_nav_left_1-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_left_2-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_middle_1-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_middle_2-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_right_1-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_right_2-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
         }
       }
     }

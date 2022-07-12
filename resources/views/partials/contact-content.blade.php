@@ -114,7 +114,7 @@
     <img src="@field('map_img', 'url')" alt="@field('map_img', 'alt')">
 </div>
 @endfield
-{{-- 
+
 @group('reviews')
 <div class="reviews container-fluid">
     <div class="row">
@@ -125,17 +125,20 @@
         <div class="col-8">
             <div class="review_slider">
                 @fields('review_repeat')
-                <div class="review">
+                <div>
+                <div class="review mx-3">
                     @hassub('logo')
                     <img src="@sub('logo', 'url')" alt="@field('logo', 'alt')">
                     @endsub
                     <p>@sub('review_text')</p>
                     <p class="name">@sub('review_name')</p>
                 </div>
+            </div>
                 @endfields
+            
             </div>
         </div>
     </div>
 </div>
-@endgroup --}}
+@endgroup
 </div>

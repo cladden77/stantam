@@ -13,7 +13,7 @@ export default {
 
     jQuery('.review_slider').slick({
       infinite: false,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
     })
 
