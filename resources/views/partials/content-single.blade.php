@@ -27,6 +27,12 @@
         <div class="entry-content mt-5">
           @php the_content() @endphp
         </div>
+
+        {{-- <div class="banner">
+          @hassub('banner_ad')
+          <img src="@sub('banner_ad', 'url')" alt="@sub('banner_ad', 'alt')" />
+          @endsub
+        </div> --}}
       </div>
     </div>
   </div>
