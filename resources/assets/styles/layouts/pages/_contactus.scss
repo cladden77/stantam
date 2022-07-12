@@ -1,19 +1,33 @@
 .contactus {
-  margin-top: 61px;
-
   h2 {
-    font-size: 66px;
+    color: map-get($theme-colors, "primary");
+    font-size: 2.25em;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.75em;
+    }
   }
 
   p {
-    font-size: 26px;
+    font-size: 18px;
   }
 
   .header {
-    padding: 110px 495px 41px 130px;
+    padding: rem(70) 0;
+    color: $white;
+
+    &__background {
+      height: 300px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
 
     h2 {
-      color: #fff;
+      line-height: 1.5em;
+      font-weight: 300 !important;
+      font-size: 1.25em;
     }
 
     p {
