@@ -5,9 +5,9 @@
             <h3>Filter by:</h3>
             <select id='location'>
                 <option value="all_locations" selected>All Locations</option>
-                <?php if (have_rows('jobs')) :
+                <?php if (have_rows('locations')) :
                     $sub_values = array();
-                    while (have_rows('jobs')) : the_row();
+                    while (have_rows('locations')) : the_row();
                         array_push($sub_values, get_sub_field('location'));
                     endwhile;
                     $sub_values = array_unique($sub_values);
@@ -50,7 +50,7 @@
             </div>
             @fields('jobs')
             <div class="job" data-position="@sub('position')" data-location="@sub('location')" data-team="@sub('team')">
-                <h4>@sub('job_title')</h4>
+                <a href="@sub('job_link')"><h4>@sub('job_title')</h4></a>
                 <div class="job_btn"><a href="@sub('job_link')"></a><span>APPLY</span></div>
             </div>
             @endfields
