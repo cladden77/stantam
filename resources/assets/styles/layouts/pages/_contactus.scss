@@ -1,19 +1,20 @@
 .contactus {
-  margin-top: 61px;
-
-  h2 {
-    font-size: 66px;
-  }
-
-  p {
-    font-size: 26px;
-  }
-
   .header {
-    padding: 110px 495px 41px 130px;
+    padding: rem(70) 0;
+    color: $white;
+
+    &__background {
+      height: 300px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
 
     h2 {
-      color: #fff;
+      line-height: 1.5em;
+      font-weight: 300 !important;
+      font-size: 1.25em;
     }
 
     p {
@@ -22,13 +23,13 @@
   }
 
   .form-section {
-    padding: 119px 158px 177px 140px;
-    display: flex;
-    gap: 49px;
+    max-width: 1400px;
+    margin: auto;
 
     img {
-      max-width: 720px;
       border-radius: 20px;
+      max-width: 100%;
+      margin: auto;
     }
 
     h2 {
@@ -37,33 +38,97 @@
 
     p {
       color: #5a6265;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
-    .img-left {
-      padding: 10px 0;
+    // Form styling
+    .gform_wrapper.gravity-theme .gfield_label {
+      visibility: hidden;
+    }
+
+    .gform_wrapper.gravity-theme input {
+      border-radius: 10px;
+      border: 1px solid #000;
+    }
+
+    /* Chrome/Opera/Safari */
+    .gform_wrapper.gravity-theme input::-webkit-input-placeholder {
+      color: #000;
+    }
+
+    /* Firefox 19+ */
+    .gform_wrapper.gravity-theme input::-moz-placeholder {
+      color: #000;
+    }
+
+    /* IE 10+ */
+    .gform_wrapper.gravity-theme input:-ms-input-placeholder {
+      color: #000;
+    }
+
+    /* Firefox 18- */
+    .gform_wrapper.gravity-theme input:-moz-placeholder {
+      color: #000;
+    }
+
+    .gform_wrapper.gravity-theme .gform_fields {
+      grid-row-gap: 0;
+    }
+
+    .gform_wrapper.gravity-theme .gfield textarea {
+      border-radius: 10px;
+      border: 1px solid #000;
+    }
+
+    .gform_wrapper.gravity-theme .gfield textarea::-webkit-input-placeholder {
+      color: #000;
+    }
+
+    /* Firefox 19+ */
+    .services-hero .gform_wrapper.gravity-theme textarea::-moz-placeholder {
+      color: #000;
+    }
+
+    /* IE 10+ */
+    .services-hero .gform_wrapper.gravity-theme textarea::-ms-input-placeholder {
+      color: #000;
+    }
+
+    .gform_wrapper.gravity-theme .gform_footer input#gform_submit_button_2.gform_button.button {
+      position: relative;
+      top: 0;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 1em 3em;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 1.25em;
+      font-size: 1em;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all 0.2s ease !important;
+      text-decoration: none;
+      color: map-get($theme-colors, "primaryLight");
+      background-color: transparent;
+      border: 1px solid #007ac1;
+
+      &:hover {
+        text-decoration: none;
+        color: $white;
+        background-color: map-get($theme-colors, "primaryLight");
+      }
     }
   }
 
   .connect {
-    padding: 177px;
-    margin: auto;
-    text-align: center;
-
-    div {
-      display: flex;
-      gap: 26px;
-      place-content: center;
-      padding: 34px 0;
-    }
-
     img {
-      width: 38px;
-      height: 38px;
+      margin-right: 10px;
+      max-width: 50%;
     }
   }
 
   .reviews {
-    padding: 100px 0;
     background: linear-gradient(90deg, #798445 50%, #fff 50%);
 
     h2 {
@@ -99,6 +164,13 @@
         top: 0;
         z-index: 1;
       }
+    }
+
+    .slick-slide {
+      max-width: 300px;
+      width: 100% !important;
+      margin: auto;
+      display: inline-flex;
     }
 
     .review {
@@ -185,6 +257,103 @@
       .slick-next {
         &::before {
           content: "→";
+        }
+      }
+    }
+  }
+
+  .contactus .footer {
+    background-color: #123655;
+    color: map-get($theme-colors, "offWhite");
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    hr {
+      max-width: 40%;
+      border: 1px solid #6e793c;
+      margin-left: 0;
+    }
+
+    .social-icons a img {
+      max-height: 80%;
+      padding: 10px;
+    }
+
+    .footer .social-icons a img {
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: map-get($theme-colors, "primaryLight");
+      }
+    }
+
+    .menu-footer_nav_left_1-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_left_2-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_middle_1-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_middle_2-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_right_1-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-footer_nav_right_2-container {
+      ul {
+        display: block;
+
+        li {
+          padding-bottom: 10px;
         }
       }
     }

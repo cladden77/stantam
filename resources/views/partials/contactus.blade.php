@@ -20,8 +20,10 @@
         </main>
       </div>
     </div>
+    <div class="footer">
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
+    </div>
   </body>
 </html>

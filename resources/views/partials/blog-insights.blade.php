@@ -1,49 +1,43 @@
-<style>
+{{-- <style>
     .slick-slide {
         margin: 0 26px;
     }
     .slick-list {
         margin: 0 -26px;
     }
-</style>
+</style> --}}
 @group('blog_insights')
-<div class="blog_insights">
-    <div class="container">
-        <h2>@sub('title')</h2>
-        <div class="blog_posts">
-            @fields('blog-reapeater')
-            <div class="blog_post">
-                <?php
-                $blog_1 = get_sub_field('blogpost');
-                $img_1 = get_the_post_thumbnail_url($blog_1->ID, 'large');
-                $categpory_1 = wp_get_post_categories($blog_1->ID);
-                $cats = array();
-                $cats_urls = array();
-                foreach ($categpory_1 as $cat) {
-                    $c = get_category($cat);
-                    array_push($cats, $c->name);
-                    array_push($cats_urls, get_category_link($c));
-                }
-                ?>
-                <img src="<?php echo $img_1; ?>">
-                <div class="blog_content">
-                    <h4><a href="<?php echo get_permalink($blog_1->ID); ?>" class="title"><?php echo esc_html($blog_1->post_title); ?></a></h4>
-                    <span class="category"><?php for ($i = 0; $i <= (count($cats) - 1); $i++) {
-                                            ?><a href="<?php echo $cats_urls[$i] ?>">
-                                <?php echo $cats[$i]; ?>
-                            </a>
-                            <?php if ($i != (count($cats)) - 1) {
-                            ?>
-                                ,
-                        <?php
-                                                }
-                                            } ?></span>
-                    <p><?php echo apply_filters('the_excerpt', $blog_1->post_content); ?></p>
-                </div>
-                <a href="<?php echo get_permalink($blog_1->ID); ?>" class="readmore">Read More</a>
+<div class="container blog-insights">
+        @hassub('recent_post_header')
+        <div class="row justify-content-center py-5">
+            <div class="col-12 text-center">
+                <h2>@sub('recent_post_header')</h2>
             </div>
-            @endfields
         </div>
+        @endsub
+<div class="row justify-content-between">
+    <?php $the_query = new WP_Query( 'posts_per_page=6' ); ?>
+    <?php if ( $the_query->have_posts() ) : ?>
+    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <?php $featured_img_url=get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
+    <div class="col-lg-4">
+      <div class="card mb-2">
+        <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
+        <div class="card-body">
+          <h4 class="card-title"><?php the_title(); ?></h4>
+          <p class="card-text"><?php
+            the_excerpt(__('(more…)')); ?></p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
     </div>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+    <p>
+      <?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?>
+    </p>
+    <?php endif; ?>
+  </div>
 </div>
 @endgroup

@@ -13,9 +13,10 @@ export default {
 
     jQuery('.review_slider').slick({
       infinite: false,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
     })
+
     //Filter
 
     function CheckJobs(a, b, c) {
@@ -103,11 +104,6 @@ export default {
         scrollTop: dest,
       }, 600, 'swing');
     });
-
-    //nav menu
-    $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
-      $('.offcanvas-collapse').toggleClass('open')
-    })
     
   },
 };

@@ -17,9 +17,9 @@
                 @sub('content')
                 @endsub
 
-                @hassub('cta_button')
+                @hassub('full_width_cta_button')
                 <div class="my-4 text-center">
-                <a class="button button--primary" href="@sub('cta_button', 'url')">@sub('cta_button', 'title')</a>
+                <a class="button button--primary" href="@sub('full_width_cta_button', 'url')">@sub('full_width_cta_button', 'title')</a>
                 @endsub
                 </div>
             </div>
