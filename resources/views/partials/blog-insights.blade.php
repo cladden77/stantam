@@ -24,10 +24,10 @@
       <div class="card mb-2">
         <img class="card-img-top" src="<?php echo $featured_img_url ?>" alt="">
         <div class="card-body">
-          <h4 class="card-title"><?php the_title(); ?></h4>
+          <a href="<?php the_permalink() ?>"><h4 class="card-title"><?php the_title(); ?></h4></a>
           <p class="card-text"><?php
             the_excerpt(__('(more…)')); ?></p>
-          <a href="#">Read more</a>
+          <a href="<?php the_permalink() ?>">Read more</a>
         </div>
       </div>
     </div>

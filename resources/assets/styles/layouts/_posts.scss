@@ -1,0 +1,33 @@
+.post {
+  header {
+    margin-top: 125px;
+
+    h1.entry-title {
+      color: map-get($theme-colors, "secondary");
+    }
+  }
+
+  .entry-content {
+    h2 {
+      margin-top: 30px;
+      color: map-get($theme-colors, "secondary");
+    }
+
+    a {
+      text-decoration: underline;
+      color: map-get($theme-colors, "primaryLight");
+    }
+  }
+
+  .sidebar {
+    p.sidebar-title {
+      color: map-get($theme-colors, "secondary");
+      font-weight: 700 !important;
+    }
+
+    a {
+      text-decoration: underline;
+      color: map-get($theme-colors, "primaryLight");
+    }
+  }
+}
