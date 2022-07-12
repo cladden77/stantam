@@ -114,7 +114,6 @@
 
   .our_culture {
     display: block;
-    padding: 100px 0;
 
     h2 {
       font-size: 3.25em;
@@ -138,15 +137,14 @@
 
   .experts {
     .experts_header {
-      margin-bottom: 96px;
-      text-align: center;
-
       h2 {
-        padding-bottom: 44px;
+        font-size: 3.25em;
+        font-weight: 700 !important;
+        color: #123655;
       }
 
       p {
-        font-size: 28px;
+        font-size: 18px;
         color: #798445;
       }
     }
@@ -156,14 +154,6 @@
         position: relative;
         margin: 20px 22px;
         padding: 0;
-
-        &:first-of-type {
-          margin: 20px 22px 20px 0;
-        }
-
-        &:last-of-type {
-          margin: 20px 0 20px 22px;
-        }
       }
 
       .photo img {
@@ -190,6 +180,7 @@
       .photo:hover .overlay {
         visibility: visible;
         opacity: 1;
+        overflow: hidden;
       }
 
       .name {

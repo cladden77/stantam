@@ -1,5 +1,5 @@
 @group('our_culture')
-<div class="our_culture">
+<div class="our_culture py-5">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
