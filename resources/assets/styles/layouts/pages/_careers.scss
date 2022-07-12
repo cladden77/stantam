@@ -117,30 +117,21 @@
     padding: 100px 0;
 
     h2 {
-      font-size: 70px;
+      font-size: 3.25em;
+      font-weight: 700 !important;
       color: #123655;
-      text-align: center;
     }
 
     h4 {
-      font-size: 48px;
       color: #798445;
+      font-weight: 700 !important;
+      line-height: 1.5em;
+      font-size: 2em;
     }
 
     .values {
-      padding: 100px 0 25px;
-
       h4 {
-        padding-bottom: 60px;
         font-style: italic;
-      }
-
-      .value {
-        display: block;
-
-        div {
-          padding-bottom: 70px;
-        }
       }
     }
   }
