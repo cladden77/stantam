@@ -8,7 +8,7 @@
             </div>
         </div>
     </div>
-    <div class="row row-cols-6 justify-content-center py-5">
+    <div class="row row-cols-5 justify-content-center">
         
         @fields('experts_repeater')
         <div class="experts_photos">
