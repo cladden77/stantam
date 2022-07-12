@@ -1,20 +1,23 @@
 @group('form_section')
+<div class="form-section py-5">
+    <div class="container-fluid px-5">
+        <div class="row align-items-center justify-content-center px-5">
+            <div class="col-12 col-md-6 col-sm-12 text-center py-3 py-md-auto">
+                <img src="@sub('image_form_left', 'url')" alt="@sub('image_form_left', 'alt')">
+            </div>
+            <div class="col-12 col-md-6 col-sm-12 text-center text-md-left">
+                @hassub('form_title')
+                <h2>@sub('form_title')</h2>
+                @endsub
 
-<div class="form-section">
-    <div>
-        <img src="@sub('image_form_left', 'url')" alt="@sub('image_form_left', 'alt')">
-    </div>
-    <div>
-        <div>
-            @hassub('form_title')
-            <h2>@sub('form_title')</h2>
-            @endsub
-            @hassub('form_text')
-            <p>@sub('form_text')</p>
-            @endsub
-        </div>
-        <div>
-            <?php echo do_shortcode(get_sub_field('form_shortcode')); ?>
+                @hassub('form_text')
+                <p>@sub('form_text')</p>
+                @endsub
+
+                @hassub('form_shortcode')
+                @sub('form_shortcode')
+                @endsub
+            </div>
         </div>
     </div>
 </div>
@@ -78,6 +81,7 @@
     <img src="@field('map_img', 'url')" alt="@field('map_img', 'alt')">
 </div>
 @endfield
+{{-- 
 @group('reviews')
 <div class="reviews container-fluid">
     <div class="row">
@@ -100,5 +104,5 @@
         </div>
     </div>
 </div>
-@endgroup
+@endgroup --}}
 </div>
