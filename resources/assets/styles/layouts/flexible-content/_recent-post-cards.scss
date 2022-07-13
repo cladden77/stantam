@@ -26,8 +26,46 @@
     background-color: $white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    .card-img-top {
+    .img-wrapper {
+      max-height: 230px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 100%;
       border-radius: 20px 20px 0 0;
+
+      @include media-breakpoint-down(lg) {
+        max-height: auto;
+        overflow: hidden;
+        position: unset;
+        display: unset;
+        justify-content: unset;
+        height: 100%;
+      }
+
+      img.card-img-top {
+        position: relative;
+        display: block;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include media-breakpoint-down(lg) {
+          position: unset;
+          display: block;
+          margin: auto;
+          top: unset;
+          left: unset;
+          transform: unset;
+        }
+      }
+    }
+
+    .card-footer {
+      border-top: 0;
+      border-radius: 20px;
     }
   }
 }
