@@ -115,6 +115,7 @@
 </div>
 @endfield
 
+@hasfield('reviews')
 @group('reviews')
 <div class="reviews container-fluid">
     <div class="row">
@@ -141,4 +142,5 @@
     </div>
 </div>
 @endgroup
+@endfield
 </div>

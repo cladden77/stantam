@@ -1,4 +1,4 @@
-<section class="services-hero py-5" style="@issub('section_background_color', 'blue')background: rgba(0, 122, 193, 0.8); background: linear-gradient(0deg, rgba(0,122,193,0.8) 0%, rgba(0,122,193,0.8) 100%), url('@sub('services_bg_image')') center center/cover no-repeat;@endsub
+<section class="services-hero py-5 mb-5" style="@issub('section_background_color', 'blue')background: rgba(0, 122, 193, 0.8); background: linear-gradient(0deg, rgba(0,122,193,0.8) 0%, rgba(0,122,193,0.8) 100%), url('@sub('services_bg_image')') center center/cover no-repeat;@endsub
 @issub('section_background_color', 'gray')background: rgba(90,98,101, 0.8); background: linear-gradient(0deg, rgba(90,98,101,0.8) 0%, rgba(90,98,101,1) 100%), url('@sub('services_bg_image')') center center/cover no-repeat;@endsub
 @issub('section_background_color', 'green')background: rgba(121,132,69, 0.8); background: linear-gradient(0deg, rgba(121,132,69,0.8) 0%, rgba(121,132,69,0.8) 100%), url('@sub('services_bg_image')') center center/cover no-repeat;@endsub">
     <div class="container">
