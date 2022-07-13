@@ -62,6 +62,9 @@
     <?php if( get_row_layout() == 'filing_steps' ): ?>
     @include('flexible-content.filing-steps')
     <?php endif; ?>
+    <?php if( get_row_layout() == 'secondary_hero' ): ?>
+    @include('flexible-content.secondary-hero')
+    <?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
