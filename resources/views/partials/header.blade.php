@@ -9,7 +9,7 @@
           @if (has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
           @endif
-          <a class="px-3" href="tel:602-560-9393">(602) 560-9393</a>
+          <a class="px-3 phone-number" href="tel:602-560-9393">(602) 560-9393</a>
           <a class="button button--primary" href="/get-started">Get Started</a>
         </div>
 
