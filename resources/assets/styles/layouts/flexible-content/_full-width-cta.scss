@@ -12,7 +12,6 @@
 
   h3 {
     font-size: 1.25em;
-    color: #798445;
     font-weight: 300 !important;
   }
 
@@ -41,6 +40,7 @@
 
   h2 {
     font-size: 2.25em;
+    color: $white;
 
     @include media-breakpoint-down(md) {
       font-size: 2em;
