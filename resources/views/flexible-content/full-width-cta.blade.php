@@ -47,7 +47,7 @@ if( get_sub_field('background_color') == 'gray' ) { ?>
                     <h3>@sub('cta_subheader')</h3>
                     @endsub
 
-                    <div class="text-center">
+                    <div class="text-center form--wrapper">
                     @hassub('cta_form')
                     @sub('cta_form')
                     @endsub
