@@ -17,7 +17,16 @@
           @include('partials.job-openings')
           @include('partials.our-culture')
           @include('partials.experts')
-          @include('partials.blog-insights')
+          @while(have_posts()) @php the_post() @endphp
+          <?php if( have_rows('careers_content') ): ?>
+          <?php while( have_rows('careers_content') ): the_row(); ?>
+              <?php if( get_row_layout() == 'recent_post_cards' ): ?>
+              @include('flexible-content.recent-post-cards')
+              <?php endif; ?>
+          <?php endwhile; ?>
+        <?php endif; ?>
+        
+          @endwhile
           </div>
         </main>
       </div>
