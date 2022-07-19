@@ -1,6 +1,6 @@
 .services-hero {
   top: 65px;
-  color: $white;
+  color: $white !important;
   position: relative;
 
   @include media-breakpoint-down(md) {
@@ -8,6 +8,8 @@
   }
 
   h1 {
+    color: $white !important;
+
     @include media-breakpoint-down(sm) {
       font-size: 2em;
     }
@@ -15,6 +17,7 @@
 
   h2 {
     font-size: 1.5em;
+    color: $white !important;
 
     @include media-breakpoint-down(sm) {
       font-size: 1em;
