@@ -4,6 +4,7 @@
 
   h2 {
     font-size: 3.25em;
+    color: $white !important;
 
     @include media-breakpoint-down(md) {
       font-size: 2.25em;
