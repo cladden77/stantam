@@ -54,26 +54,31 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 300 !important;
   font-size: 18px;
+  line-height: 1.25em;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700 !important;
+  color: #000;
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700 !important;
+  color: map-get($theme-colors, "primary");
 }
 
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500 !important;
+  color: map-get($theme-colors, "primaryLight");
 }
 
 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 500 !important;
+  color: map-get($theme-colors, "secondary");
 }
 
 h5 {
