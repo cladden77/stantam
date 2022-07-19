@@ -2,8 +2,9 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-12">
+                @hassub('image')
                 <img class="float-none float-md-left float-sm-none" src="@sub('image', 'url')" alt="@sub('image', 'alt')" />
-
+                @endsub
                 <div>
                 @hassub('header')
                 <h2 class="pb-4">@sub('header')</h2>
