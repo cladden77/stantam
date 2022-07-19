@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-4 col-sm-12">
-        <h2>About Company</h2>
+        <h2>About Us</h2>
         <hr />
         <div class="mb-4">
         @if (has_nav_menu('footer_navigation_left_1'))
@@ -20,8 +20,7 @@
       </div>
 
       <div class="col-12 col-md-4 col-sm-12">
-        <h2>Compliance & Risk
-          Protection</h2>
+        <h2>Compliance</h2>
         <hr />
         <div class="mb-4">
         @if (has_nav_menu('footer_navigation_middle_1'))
@@ -39,7 +38,7 @@
       </div>
 
       <div class="col-12 col-md-4 col-sm-12">
-        <h2>Knowledge Center</h2>
+        <h2>Resources</h2>
         <hr />
         <div class="mb-4">
         @if (has_nav_menu('footer_navigation_right_1'))
