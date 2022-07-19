@@ -1,19 +1,22 @@
 .page-hero {
   padding: rem(70) 0;
   overflow: hidden;
-  color: $white;
 
   &__background {
     height: 300px;
   }
 
-  h1 {
-    font-size: 3em;
-  }
+  &__content-wrapper {
+    h1 {
+      font-size: 3em;
+      color: #fff !important;
+    }
 
-  h2 {
-    line-height: 1.5em;
-    font-weight: 300 !important;
-    font-size: 1.25em;
+    h2 {
+      line-height: 1.5em;
+      font-weight: 300 !important;
+      font-size: 1.25em;
+      color: #fff !important;
+    }
   }
 }
