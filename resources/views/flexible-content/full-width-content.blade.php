@@ -6,7 +6,7 @@
 
                 <div>
                 @hassub('header')
-                <h2>@sub('header')</h2>
+                <h2 class="pb-4">@sub('header')</h2>
                 @endsub
 
                 @hassub('subheader')
