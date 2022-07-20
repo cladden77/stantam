@@ -45,7 +45,7 @@
 
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <div class="d-inline-flex align-items-start">
+                <div class="d-inline-flex align-items-center">
                     @hassub('phone_icon')
                     <img src="@sub('phone_icon', 'url')" alt="@sub('phone_icon', 'alt')">
                     @endsub

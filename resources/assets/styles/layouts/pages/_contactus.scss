@@ -125,8 +125,12 @@
 
   .connect {
     img {
-      margin-right: 10px;
-      max-width: 50%;
+      margin: auto 10px;
+      height: 20px;
+    }
+
+    p {
+      margin-bottom: 0;
     }
   }
 
