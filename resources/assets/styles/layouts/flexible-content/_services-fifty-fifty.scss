@@ -2,7 +2,7 @@
   h2 {
     color: map-get($theme-colors, "primary");
     font-size: 3em;
-    line-height: 1.5em;
+    line-height: 1.25em;
 
     @include media-breakpoint-down(sm) {
       font-size: 2em;
