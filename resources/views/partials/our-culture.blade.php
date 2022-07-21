@@ -6,7 +6,7 @@
                 <h2>@sub('title')</h2>
 
                 <div class="values">
-                    <div class="value col-12 col-md-6 col-sm-12 m-auto">
+                    <div class="value col-12 m-auto">
                         @fields('text_on_left_repeat')
                         <div class="py-3">
                             <h4>@sub('title_of_box')</h4>

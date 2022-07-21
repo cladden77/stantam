@@ -1,4 +1,8 @@
 .services-fifty-fifty-image {
+  &--gray {
+    background-color: #f6f6f6;
+  }
+
   h2 {
     color: map-get($theme-colors, "primary");
     font-size: 2.25em;
