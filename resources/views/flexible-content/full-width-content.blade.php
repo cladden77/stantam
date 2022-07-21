@@ -1,4 +1,4 @@
-<section class="full-width-content py-5">
+<section class="full-width-content pt-5">
     <div class="container py-5">
         <div class="row">
             <div class="col-12">
