@@ -1,7 +1,7 @@
 <section class="three-col three-col--@hassub('gray_toggle')@sub('gray_toggle')@endsub">
     <div class="container p-5">
         <div class="row justify-content-center">
-            <h2 class="text-center">@sub('three_col_header')</h2>
+            <h2 class="text-center">@sub('three_col_header')</h2><br />
             <h3 class="text-center">@sub('three_col_subheader')</h3>
         </div>
         <div class="row justify-content-center mt-5">
