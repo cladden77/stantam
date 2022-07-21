@@ -7,11 +7,11 @@
                 @endsub
                 <div>
                 @hassub('header')
-                <h2 class="pb-4">@sub('header')</h2>
+                <h2 class="pb-4 @hassub('text-center')@sub('text-center')@endsub">@sub('header')</h2>
                 @endsub
 
                 @hassub('subheader')
-                <h3 class="mb-3">@sub('subheader')</h3>
+                <h3 class="mb-3 @hassub('text-center')@sub('text-center')@endsub">@sub('subheader')</h3>
                 @endsub
 
                 @hassub('content')
