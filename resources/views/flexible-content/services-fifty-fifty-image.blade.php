@@ -1,4 +1,4 @@
-<section class="services-fifty-fifty-image my-5 py-5 services-fifty-fifty-image--@hassub('gray_toggle')@sub('gray_toggle')@endsub">
+<section class="services-fifty-fifty-image py-5 services-fifty-fifty-image--@hassub('gray_toggle')@sub('gray_toggle')@endsub">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="order-2 order-md-1 col-12 col-md-6 col-sm-12 text-center text-md-left text-sm-center">
