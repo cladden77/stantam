@@ -15,12 +15,12 @@
             <?php while( have_rows('filing_steps_repeater') ): the_row(); ?>
             <div class="row">
             
-            <div class="card @sub('position') my-3">
+            <div class="card align-items-center @sub('position') my-3">
                <hr />
-               <div class="filing-steps-content">          
+               <div class="filing-steps-content pl-3 pl-lg-3 pl-md-0 p-3 p-md-3 p-lg-0">          
                     @hassub('description')
-                    <div class="card-body description">
-                        <div class="card-text text-center text-lg-left text-md-center">@sub('description')</div>
+                    <div>
+                        <div class="text-center text-lg-left text-md-center">@sub('description')</div>
                     </div>
                     @endsub
                 </div>

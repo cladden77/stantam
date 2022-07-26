@@ -12,7 +12,7 @@
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    max-height: 640px;
+    max-height: 550px;
     z-index: 0;
 
     @include media-breakpoint-down(lg) {
@@ -36,10 +36,6 @@
     top: 30px;
   }
 
-  p {
-    margin: 0;
-  }
-
   h2 {
     font-size: 2.25em;
     color: map-get($theme-colors, "primary");
@@ -58,6 +54,11 @@
   &-content {
     position: relative;
     top: -10px;
+
+    @include media-breakpoint-down(lg) {
+      margin: 20px auto;
+      top: 0;
+    }
   }
 
   /* left card fix */
@@ -73,7 +74,7 @@
     background-color: transparent;
     height: 1px;
     width: 20%;
-    left: 475px;
+    left: 280px;
     top: 40%;
     position: relative;
     z-index: -1;
@@ -96,7 +97,7 @@
     background-color: transparent;
     height: 1px;
     width: 20%;
-    left: -100px;
+    left: -285px;
     top: 40%;
     position: relative;
     z-index: -1;
@@ -147,6 +148,123 @@
       @include media-breakpoint-down(lg) {
         display: none;
       }
+    }
+  }
+}
+
+// ERC arrow fix
+.page-id-260 {
+  .filing-steps {
+    /* The actual timeline (the vertical ruler) */
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: #007ac1;
+      top: 175px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      max-height: 550px;
+      z-index: 0;
+
+      @include media-breakpoint-down(lg) {
+        max-height: 450px;
+        top: 200px;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-height: 580px;
+        top: 200px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-height: 640px;
+        top: 265px;
+      }
+    }
+
+    .arrow {
+      content: "";
+      top: 30px;
+    }
+  }
+}
+
+// R&D arrow fix
+.page-id-531 {
+  .filing-steps {
+    /* The actual timeline (the vertical ruler) */
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: #007ac1;
+      top: 175px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      max-height: 525px;
+      z-index: 0;
+
+      @include media-breakpoint-down(lg) {
+        max-height: 450px;
+        top: 200px;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-height: 580px;
+        top: 200px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-height: 640px;
+        top: 265px;
+      }
+    }
+
+    .arrow {
+      content: "";
+      top: 30px;
+    }
+  }
+}
+
+// Work Opportunity arrow fix
+.page-id-537 {
+  .filing-steps {
+    /* The actual timeline (the vertical ruler) */
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: #007ac1;
+      top: 175px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      max-height: 475px;
+      z-index: 0;
+
+      @include media-breakpoint-down(lg) {
+        max-height: 425px;
+        top: 200px;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-height: 580px;
+        top: 200px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-height: 640px;
+        top: 220px;
+      }
+    }
+
+    .arrow {
+      content: "";
+      top: 30px;
     }
   }
 }
