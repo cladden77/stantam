@@ -1,31 +1,39 @@
-<header class="banner">
-  <nav class="navbar fixed-top navbar-expand-lg py-4">
-    <div class="container-fluid justify-content-center">
-      <div class="row align-items-md-center justify-content-center">
-        <div class="col-8 col-md-8 col-lg">
-          <a class="navbar-brand" href="{{ home_url('/') }}"><img src="/wp-content/uploads/2022/07/Stenson-tamaddon-logo.png" alt="Stenson Tamaddon" /></a>
+<header class="header">
+      <div class="row header__row align-content-center">
+        <div class="col-6 col-lg-3 text-left">
+          <a class="navbar-brand" href="{{ home_url('/') }}" aria-label="return to homepage"><img src="/wp-content/uploads/2022/07/Stenson-tamaddon-logo.png" alt="Stenson Tamaddon" /></a>
         </div>
-        <div class="col-9 d-inline-flex align-items-md-center justify-content-end desktop">
+        <div class="col-9 text-right flex-row justify-content-end align-items-center d-none d-lg-flex">
+          <nav class="nav-primary">
           @if (has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
           @endif
+        </nav>
+        <div class="header__header-links">
           <a class="px-3 phone-number" href="tel:602-560-9393">(602) 560-9393</a>
+        </div>
+        <div class="header__header-links">
           <a class="button button--primary" href="/get-started">Get Started</a>
         </div>
+        </div>
 
-        <div class="col-4 text-right">
-          <div class="mobile-nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse" id="navbarToggleExternalContent">
-              @if (has_nav_menu('primary_navigation'))
-                  {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-                  @endif
-            </div>
-          </div>
+        <div class="col-6 d-flex d-lg-none justify-content-end">
+          <button class="p-2 hamburger hamburger--spring d-flex" type="button" data-pushbar-target="mobile_header">
+            <span class="hamburger-box">
+              <span class="hamburger-inner">
+                <span class="sr-only sr-only-focusable">
+                  Mobile Menu
+                </span>
+              </span>
+            </span>
+          </button>
+        </div>
       </div>
+      <div class="mobile-header" data-pushbar-id="mobile_header" data-pushbar-direction="top">
+        <nav class="mobile-header__menu-wrap p-5">
+          @if (has_nav_menu('primary_navigation'))
+              {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav flex-column']) !!}
+          @endif
+        </nav>
       </div>
-    </div>
-  </nav>
 </header>
