@@ -1,3 +1,5 @@
+import Pushbar from '../util/Pushbar';
+
 export default {
   init() {
     // JavaScript to be fired on all pages
@@ -16,6 +18,21 @@ export default {
       slidesToShow: 1,
       slidesToScroll: 1,
     })
+
+        // Trigger Pushbar sitewide for all slideout menus
+        const pushbar = new Pushbar({
+            blur:false,
+            overlay:false,
+          });
+
+          $('.hamburger').click(function() {
+            var open = 'is-active';
+            if($(this).hasClass(open)) {
+              pushbar.close();
+            }
+      
+            $(this).toggleClass(open);
+          });
 
     //Filter
 
