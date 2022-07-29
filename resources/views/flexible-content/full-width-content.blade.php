@@ -1,4 +1,4 @@
-<section class="full-width-content mt-3">
+<section class="full-width-content full-width-content--@hassub('gray_toggle')@sub('gray_toggle')@endsub mt-3">
     <div class="container pt-5">
         <div class="row">
             <div class="col-12">
