@@ -10,7 +10,7 @@
           @endif
         </nav>
         <div class="header__header-links">
-          <a class="px-3 phone-number" href="tel:602-560-9393">(602) 560-9393</a>
+          <a class="px-3 phone-number" href="tel:888-375-1000">888-375-1000</a>
         </div>
         <div class="header__header-links">
           <a class="button button--primary" href="/get-started">Get Started</a>
