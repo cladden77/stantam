@@ -11,7 +11,13 @@
   @endif
 
   @while (have_posts()) @php the_post() @endphp
-    @include('partials.content-'.get_post_type())
+  <section class="m-5 post-list">
+    <div class="container">
+      <div class="row">
+        @include('partials.content-'.get_post_type())
+      </div>
+    </div>
+  </section>
   @endwhile
 
   {!! get_the_posts_navigation() !!}
