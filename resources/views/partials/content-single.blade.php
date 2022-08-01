@@ -1,5 +1,15 @@
 
+
+
 <article @php post_class() @endphp>
+  <?php if( have_rows('post_content') ): ?>
+          <?php while( have_rows('post_content') ): the_row(); ?>
+              <?php if( get_row_layout() == 'page_hero' ): ?>
+              @include('flexible-content.page-hero')
+              <?php endif; ?>
+          <?php endwhile; ?>
+        <?php endif; ?>
+
   <div class="container">
     <div class="row">
       <header>
@@ -27,12 +37,6 @@
         <div class="entry-content mt-5">
           @php the_content() @endphp
         </div>
-
-        {{-- <div class="banner">
-          @hassub('banner_ad')
-          <img src="@sub('banner_ad', 'url')" alt="@sub('banner_ad', 'alt')" />
-          @endsub
-        </div> --}}
       </div>
     </div>
   </div>
