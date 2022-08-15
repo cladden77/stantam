@@ -1,0 +1,46 @@
+.experts {
+  background-color: $white;
+
+  h2 {
+    font-size: 2.25em;
+    color: map-get($theme-colors, "primary");
+
+    @include media-breakpoint-down(md) {
+      font-size: 2em;
+    }
+  }
+
+  h3 {
+    font-size: 1.25em;
+    color: #798445;
+    font-weight: 300 !important;
+  }
+
+  .experts_photo {
+    img {
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .content {
+    position: relative;
+
+    p {
+      display: none;
+    }
+  }
+
+  .overlay:hover {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    color: $white !important;
+    background-color: map-get($theme-colors, "secondaryLight");
+
+    p {
+      padding: 10px;
+      display: block;
+    }
+  }
+}

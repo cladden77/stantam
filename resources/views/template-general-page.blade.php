@@ -65,6 +65,9 @@
     <?php if( get_row_layout() == 'secondary_hero' ): ?>
     @include('flexible-content.secondary-hero')
     <?php endif; ?>
+    <?php if( get_row_layout() == 'experts' ): ?>
+    @include('flexible-content.experts')
+    <?php endif; ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
