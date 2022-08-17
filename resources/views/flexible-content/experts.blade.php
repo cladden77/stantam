@@ -11,32 +11,36 @@
             </div>
         </div>
 
-        <div class="row row-cols-5 justify-content-center">
+        <div class="row justify-content-center">
             @fields('experts_repeater')
-            <div class="col">
-                <div class="experts_photo">
-                      <img src="@sub('expert_image', 'url')">
-                </div>
-                <div class="overlay content">
-                    @hassub('expert_name')
-                    <div class="name">
-                        <p>
-                            @sub('expert_name')
-                        </p>
+            <div class="col-8 col-sm-8 col-md-2 p-0 m-2 experts-col">
+                <div class="experts-container">
+                    <div class="experts_photo">
+                        <img src="@sub('expert_image', 'url')" alt="@sub('expert_image', 'alt')">
                     </div>
-                    @endsub
-                    @hassub('expert_title')
-                    <div class="position">
-                        <p>@sub('expert_title')</p>
+                    <div class="overlay">
+                        <div class="content">
+                            @hassub('expert_name')
+                            <div class="name">
+                                <p>
+                                    @sub('expert_name')
+                                </p>
+                            </div>
+                            @endsub
+                            @hassub('expert_title')
+                            <div class="position">
+                                <p>@sub('expert_title')</p>
+                            </div>
+                            @endsub
+                            @hassub('linkedin_url')
+                            <div class="social-link">
+                                <p>
+                                    <a href="@sub('linkedin_url')"><img alt="LinkedIn logo" src="" /></a>
+                                </p>
+                            </div>
+                            @endsub
+                        </div>
                     </div>
-                    @endsub
-                    @hassub('linkedin_url')
-                    <div class="social-link">
-                        <p>
-                            <a href="@sub('linkedin_url')"><img alt="LinkedIn logo" src="" /></a>
-                        </p>
-                    </div>
-                    @endsub
                 </div>
             </div>
             @endfields
