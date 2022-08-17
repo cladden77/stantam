@@ -58,8 +58,8 @@
 
     <div class="row pt-5">
       <div class="col-12 text-center text-sm-center text-md-left social-icons">
-        <a href="https://www.facebook.com/StenTam/"><img src="/wp-content/uploads/2022/06/facebook-icon.svg" alt="Facebook"></a>
-        <a href="https://www.linkedin.com/company/stenson-tamaddon"><img src="/wp-content/uploads/2022/06/linkedin-icon.svg" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/StenTam-101443016010305/"><img src="/wp-content/uploads/2022/06/facebook-icon.svg" alt="Facebook"></a>
+        <a href="https://www.twitter.com/StensonTamaddon"><img src="/wp-content/uploads/2022/06/twitter-icon.svg" alt="Twitter"></a>
       </div>
     </div>
       <div class="row no-gutters justify-content-between copyright">
