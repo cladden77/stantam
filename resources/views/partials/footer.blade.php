@@ -79,4 +79,7 @@
     })(window,document,'script','https://scout-cdn.salesloft.com/sl.js','slscout');
     slscout(["init", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0IjoxMDc1NDZ9.LgZLm7fLhEPzud4Tzul0PqHcCbDpHO5siSZPLjdDM8I"]);
 </script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/22378687.js"></script>
+<!-- End of HubSpot Embed Code -->
 </footer>
